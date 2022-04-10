@@ -4,7 +4,8 @@
   "description": "通用的工具库",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "husky": "husky install && echo 'export PATH=\"/usr/local/bin/:$PATH\"' >> ~/.huskyrc"
   },
   "repository": {
     "type": "git",
