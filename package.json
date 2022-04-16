@@ -4,7 +4,7 @@
   "description": "通用的工具库",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "husky": "husky install && echo 'export PATH=\"/usr/local/bin/:$PATH\"' >> ~/.huskyrc"
   },
   "repository": {
@@ -21,5 +21,15 @@
   "bugs": {
     "url": "https://github.com/daysnap/util/issues"
   },
-  "homepage": "https://github.com/daysnap/util#readme"
+  "homepage": "https://github.com/daysnap/util#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.1",
+    "@commitlint/config-conventional": "^16.2.1",
+    "@types/jest": "^27.4.1",
+    "commitizen": "^4.2.4",
+    "husky": "^7.0.4",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
+  }
 }
