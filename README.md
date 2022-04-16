@@ -1,4 +1,4 @@
-# daysnap-utils
+# @daysnap/util
 
 工具库
 
