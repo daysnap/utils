@@ -16,14 +16,6 @@ const paths = {
   ]
 }
 
-function transform (file) {
-  const code = babel.transform(file.contents, {
-    ...{"presets":["/Users/ajuan/Downloads/util-master/node_modules/father-build/node_modules/@babel/preset-typescript/lib/index.js",["/Users/ajuan/Downloads/util-master/node_modules/father-build/node_modules/@babel/preset-env/lib/index.js",{"targets":{"browsers":["last 2 versions","IE 10"]},"modules":false}]],"plugins":[["/Users/ajuan/Downloads/util-master/node_modules/father-build/node_modules/@babel/plugin-proposal-decorators/lib/index.js",{"legacy":true}],["/Users/ajuan/Downloads/util-master/node_modules/father-build/node_modules/@babel/plugin-transform-runtime/lib/index.js",{"useESModules":true,"version":"7.17.9"}]]},
-    filename: file.path,
-    // configFile: false
-  }).code
-  return code
-}
 function isTransform(path) {
   return /\.jsx?$/.test(path) && !path.endsWith(".d.ts");
 }
