@@ -2,6 +2,8 @@
 const gulp = require('gulp')
 const babel2 = require('gulp-babel')
 const through = require('through2')
+const ts = require('gulp-typescript')
+const gulpIf = require('gulp-if')
 const babel = require('@babel/core');
 
 const paths = {
@@ -22,6 +24,9 @@ function transform (file) {
   }).code
   return code
 }
+function isTransform(path) {
+  return /\.jsx?$/.test(path) && !path.endsWith(".d.ts");
+}
 
 function compileScripts(babelEnv, destDir) {
   const { scripts } = paths
@@ -29,7 +34,21 @@ function compileScripts(babelEnv, destDir) {
   process.env.BABEL_ENV = babelEnv
   return gulp
     .src(scripts)
-    .pipe(babel2())
+    .pipe(ts({
+      target: 'esnext',
+      moduleResolution: 'node',
+      baseUrl: './',
+      jsx: 'preserve',
+      declaration: true,
+      skipLibCheck: true,
+      esModuleInterop: true
+    }))
+    .pipe(
+      gulpIf(
+        (f) => isTransform(f.path),
+        babel2()
+      )
+    )
     // .pipe(through.obj((file, env, cb) => {
     //   try {
     //     file.contents = Buffer.from(
