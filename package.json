@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "通用的工具库",
   "scripts": {
-    "build": "rollup -c",
+    "build": "dsc build",
     "test": "jest",
     "husky": "husky install && echo 'export PATH=\"/usr/local/bin/:$PATH\"' >> ~/.huskyrc"
   },
@@ -27,22 +27,17 @@
   },
   "homepage": "https://github.com/daysnap/util#readme",
   "devDependencies": {
-    "@babel/core": "^7.17.9",
-    "@babel/plugin-transform-runtime": "7.12.1",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/preset-typescript": "7.12.1",
     "@commitlint/cli": "^16.2.1",
     "@commitlint/config-conventional": "^16.2.1",
     "@types/jest": "^27.4.1",
     "commitizen": "^4.2.4",
-    "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
-    "gulp-if": "^3.0.0",
-    "gulp-typescript": "^6.0.0-alpha.1",
     "husky": "^7.0.4",
     "jest": "^27.5.1",
     "rc-util": "^5.20.1",
     "ts-jest": "^27.1.4",
     "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.17.9"
   }
 }
