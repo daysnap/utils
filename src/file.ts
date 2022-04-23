@@ -37,20 +37,13 @@ export const toFile = (base64: string, contentType?: string): File => {
   return blob
 }
 
-interface CompressOptions {
+interface CompressImageOptions {
   width?: number
   height?: number
   quality?: number
 }
 
-interface CompressSuccessResult {
-  base64: string
-  width: string
-  height: string
-  image: HTMLImageElement
-}
-
-export const compress = (image: CanvasImageSource, options: CompressOptions = {}): string => {
+export const compressImage = (image: CanvasImageSource, options: CompressImageOptions = {}): string => {
   const props = pick(image, ['width', 'height'])
   const { width, height, quality } = Object.assign({}, props, options)
   const canvas = document.createElement('canvas')
@@ -70,9 +63,31 @@ export const getImageElement = (src: string) => new Promise<HTMLImageElement>((r
   image.src = src
 })
 
+export const getBlobByUrl = (url: string) => new Promise<Blob>((resolve, reject) => {
+  const xhr = new XMLHttpRequest()
+  xhr.open('GET', url, true)
+  xhr.setRequestHeader('Access-Control-Allow-Origin', '*')
+  xhr.responseType = 'blob'
+  xhr.onload = () => {
+    const { status, response, statusText } = xhr
+    status === 200 ? resolve(response) : reject(statusText)
+  }
+  xhr.onerror = reject
+  xhr.send()
+})
+
+export const downloadFile = (data: string | Blob | MediaSource) => {
+  const a = document.createElement('a')
+  a.href = typeof data === 'object' ? window.URL.createObjectURL(data) : data
+  a.click()
+  window.URL.revokeObjectURL(a.href)
+}
+
 export default {
   toBase64,
   toFile,
-  compress,
+  compressImage,
   getImageElement,
+  getBlobByUrl,
+  downloadFile,
 }

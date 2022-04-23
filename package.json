@@ -5,6 +5,7 @@
   "scripts": {
     "build": "dsc build",
     "test": "jest",
+    "coverage": "jest --coverage",
     "husky": "husky install && echo 'export PATH=\"/usr/local/bin/:$PATH\"' >> ~/.huskyrc"
   },
   "repository": {

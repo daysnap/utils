@@ -16,3 +16,6 @@ lib/
 
 # lock
 package-lock.json
+
+# jest
+coverage
