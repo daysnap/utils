@@ -3,9 +3,12 @@ import pick from './pick'
 
 export const toBase64 = (file: File) => new Promise<FileReader>((resolve, reject) => {
   const fileReader = new FileReader()
-  fileReader.readAsDataURL(file)
-  fileReader.onload = (res) => resolve(fileReader)
+  fileReader.onload = (res) => {
+    const result = res.target.result
+    resolve(fileReader)
+  }
   fileReader.onerror = reject
+  fileReader.readAsDataURL(file)
 })
 
 export const toFile = (base64: string, contentType?: string): File => {
