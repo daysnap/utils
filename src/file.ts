@@ -1,11 +1,11 @@
 
 import pick from './pick'
 
-export const toBase64 = (file: File) => new Promise<FileReader>((resolve, reject) => {
+export const toBase64 = (file: File) => new Promise<string | ArrayBuffer>((resolve, reject) => {
   const fileReader = new FileReader()
   fileReader.onload = (res) => {
     const result = res.target.result
-    resolve(fileReader)
+    resolve(result)
   }
   fileReader.onerror = reject
   fileReader.readAsDataURL(file)
