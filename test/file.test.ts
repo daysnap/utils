@@ -2,9 +2,6 @@
 import { toBase64 } from '../src/file'
 
 declare global {
-  interface Promise<T> {
-    toast(): void
-  }
   interface Window {
     File: any
     FileReader: any
