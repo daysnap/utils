@@ -1,11 +1,12 @@
 {
   "name": "@daysnap/util",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "通用的工具库",
   "scripts": {
     "build": "dsc build",
     "test": "jest",
     "coverage": "jest --coverage",
+    "publish": "npm run build && dsc publish",
     "husky": "husky install && echo 'export PATH=\"/usr/local/bin/:$PATH\"' >> ~/.huskyrc"
   },
   "repository": {
@@ -41,5 +42,9 @@
   "dependencies": {
     "@babel/runtime": "^7.17.9",
     "axios": "^0.26.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
