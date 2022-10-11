@@ -1,11 +1,12 @@
-# @daysnap/util
+# @daysnap/utils
 
 工具库
 
 ## 使用
 
 ```shell
-npm install @daysnap/util
+npm install @daysnap/utils
+
 # or
-yarn add @daysnap/util
+yarn add @daysnap/utils
 ```
