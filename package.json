@@ -9,7 +9,8 @@
     "coverage": "jest --coverage",
     "publish": "npm run build && dsc publish",
     "husky": "husky install && echo 'export PATH=\"/usr/local/bin/:$PATH\"' >> ~/.huskyrc",
-    "lint": "eslint 'src/**/*.{js,ts}' --fix"
+    "lint": "eslint 'src/**/*.{js,ts}' --fix",
+    "prepare": "husky install && echo 'export PATH=\"/usr/local/bin/:$PATH\"' >> ~/.huskyrc"
   },
   "repository": {
     "type": "git",
