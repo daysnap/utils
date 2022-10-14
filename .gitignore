@@ -13,6 +13,7 @@ yarn-error.log*
 # build
 es/
 lib/
+dist/
 
 # lock
 package-lock.json
