@@ -35,6 +35,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
 
     'no-console': 'off',
+    'no-plusplus': 'off',
     'no-use-before-define': 'off',
     'no-prototype-builtins': 'off',
   },
