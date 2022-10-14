@@ -21,3 +21,4 @@ export interface IRule {
 }
 
 export type TypeSource = (IBananaSource[] | { [key: string]: IBananaSource })
+

@@ -3,19 +3,21 @@
   "version": "0.0.3",
   "description": "通用的工具库",
   "scripts": {
+    "ts-node": "npx ts-node --project ./tsconfig.json ./src/filename.ts",
     "build": "dsc build",
     "test": "jest",
     "coverage": "jest --coverage",
     "publish": "npm run build && dsc publish",
-    "husky": "husky install && echo 'export PATH=\"/usr/local/bin/:$PATH\"' >> ~/.huskyrc"
+    "husky": "husky install && echo 'export PATH=\"/usr/local/bin/:$PATH\"' >> ~/.huskyrc",
+    "lint": "eslint 'src/**/*.{js,ts}' --fix"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daysnap/util.git"
+    "url": "git+https://github.com/daysnap/utils.git"
   },
   "keywords": [
     "daysnap",
-    "util",
+    "utils",
     "tool"
   ],
   "files": [
@@ -31,20 +33,26 @@
   "devDependencies": {
     "@commitlint/cli": "^16.2.1",
     "@commitlint/config-conventional": "^16.2.1",
-    "@types/jest": "^27.4.1",
     "commitizen": "^4.2.4",
+    "eslint": "^8.25.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "husky": "^7.0.4",
-    "jest": "^27.5.1",
-    "rc-util": "^5.20.1",
-    "ts-jest": "^27.1.4",
-    "typescript": "^4.6.3"
-  },
-  "dependencies": {
-    "@babel/runtime": "^7.17.9",
-    "axios": "^0.26.1"
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts}": "eslint --fix"
   }
 }

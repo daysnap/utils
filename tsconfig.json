@@ -1,11 +1,33 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es2015",
+    "module": "ES2015",
+    "lib": ["esnext", "dom"],
+    "strict": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
     "moduleResolution": "node",
-    "baseUrl": "./",
-    "jsx": "preserve",
-    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedParameters": true,
+    "noEmit": true,
     "skipLibCheck": true,
-    "esModuleInterop": true
+    "rootDir": "src",
+    "baseUrl": ".",
+    "allowJs": true
   },
+  "include": [
+    "src/**/*.ts",
+    ".eslintrc.js",
+    ".commitlint.config.js"
+  ],
+  "exclude": ["node_modules"],
+  "ts-node": {
+    "transpileOnly": true,
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  }
 }
