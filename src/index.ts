@@ -1,9 +1,23 @@
+/* 本文件自动生成 './scripts/entry.js' */
+
+export const version = '0.0.3'
+
 export * from './base64ToBlob'
 export * from './blobToBase64'
 export * from './compressImage'
+export * from './createHexColorByHash'
 export * from './downloadFile'
+export * from './formatDate'
 export * from './getBlobByUrl'
 export * from './getImageInfo'
 export * from './getVideoInfo'
+export * from './isEmpty'
+export * from './isNull'
+export * from './isObject'
+export * from './isUndefined'
 export * from './omit'
+export * from './parseError'
+export * from './parsePath'
 export * from './pick'
+export * from './replaceCrlf'
+export * from './reserve'

@@ -4,6 +4,9 @@
   "description": "通用的工具库",
   "scripts": {
     "ts-node": "npx ts-node --project ./tsconfig.json ./src/filename.ts",
+    "gen": "plop --plopfile ./scripts/gen.js --force",
+    "del": "plop --plopfile ./scripts/del.js --force",
+    "entry": "plop --plopfile ./scripts/entry.js --force",
     "build": "dsc build",
     "test": "jest",
     "coverage": "jest --coverage",
@@ -47,6 +50,7 @@
     "node-dir": "^0.1.17",
     "plop": "^3.1.1",
     "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4"
   },

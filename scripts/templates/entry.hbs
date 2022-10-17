@@ -1,0 +1,7 @@
+/* 本文件自动生成 './scripts/entry.js' */
+
+export const version = '{{version}}'
+
+{{#each modules}}
+export * from './{{ this }}'
+{{/each}}
