@@ -4,6 +4,7 @@ export const version = '0.0.3'
 
 export * from './base64ToBlob'
 export * from './blobToBase64'
+export * from './compareVersion'
 export * from './compressImage'
 export * from './createHexColorByHash'
 export * from './downloadFile'
