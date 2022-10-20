@@ -3,3 +3,5 @@
 /scripts
 /es
 /lib
+/test
+rollup.config.js
