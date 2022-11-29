@@ -1,7 +1,5 @@
 /* 本文件自动生成 './scripts/entry.js' */
 
-export const version = '0.0.27'
-
 export * from './base64ToBlob'
 export * from './blobToBase64'
 export * from './compareVersion'
