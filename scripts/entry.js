@@ -1,6 +1,6 @@
 const path = require('path')
 const { requireFilePath, rc, rt } = require('./utils')
-const { version } = require('../package.json')
+// const { version } = require('../package.json')
 
 const modules = ((entry) => {
   return requireFilePath(entry, true, /\.ts$/)
@@ -39,7 +39,7 @@ module.exports = (plop) => {
         templateFile: rt('entry.hbs'),
         data: {
           modules,
-          version,
+          // version,
         },
       },
     ],
