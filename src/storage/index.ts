@@ -1,5 +1,17 @@
 import { factory } from './factory'
 
-export const cache = factory('sessionStorage')
+type FactoryReturn = ReturnType<typeof factory>
 
-export const local = factory('localStorage')
+const getStorage = (type: 'sessionStorage' | 'localStorage') => {
+  let instance: any = null
+  return () => {
+    if (!instance) {
+      instance = factory(type)
+    }
+    return instance as FactoryReturn
+  }
+}
+
+export const getCache = getStorage('sessionStorage')
+
+export const getLocal = getStorage('localStorage')
