@@ -12,8 +12,8 @@
     "build": "dsc build",
     "test": "jest",
     "coverage": "jest --coverage",
-    "predeploy": "npm run entry && npm run test",
-    "deploy": "npm run build && dsc publish -t",
+    "prerelease": "npm run entry && npm run test",
+    "release": "npm run build && dsc publish -t",
     "husky": "husky install && echo 'export PATH=\"/usr/local/bin/:$PATH\"' >> ~/.huskyrc",
     "lint": "eslint 'src/**/*.{js,ts}' --fix",
     "prepare": "husky install && echo 'export PATH=\"/usr/local/bin/:$PATH\"' >> ~/.huskyrc"
