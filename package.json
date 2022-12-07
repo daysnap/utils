@@ -13,7 +13,7 @@
     "build": "dsc build",
     "test": "jest",
     "coverage": "jest --coverage",
-    "prerelease": "npm run entry && npm run test",
+    "prerelease": "npm run entry && npm run test && npm run docs",
     "release": "npm run build && dsc publish -t",
     "husky": "husky install && echo 'export PATH=\"/usr/local/bin/:$PATH\"' >> ~/.huskyrc",
     "lint": "eslint 'src/**/*.{js,ts}' --fix",
