@@ -1,7 +1,7 @@
 import { isEmptyObject } from '../src'
 
 describe('isEmptyObject', () => {
-  it('正常工作1', () => {
+  it('正常工作', () => {
     const received = isEmptyObject({})
     expect(received).toEqual(true)
   })

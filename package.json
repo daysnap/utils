@@ -1,6 +1,6 @@
 {
   "name": "@daysnap/utils",
-  "version": "0.0.29",
+  "version": "0.0.31",
   "description": "通用的工具库",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -9,11 +9,12 @@
     "gen": "plop --plopfile ./scripts/gen.js --force",
     "del": "plop --plopfile ./scripts/del.js --force",
     "entry": "plop --plopfile ./scripts/entry.js --force",
+    "docs": "typedoc --plugin typedoc-plugin-markdown --out docs src/index.ts",
     "build": "dsc build",
     "test": "jest",
     "coverage": "jest --coverage",
-    "predeploy": "npm run entry && npm run test",
-    "deploy": "npm run build && dsc publish -t",
+    "prerelease": "npm run entry && npm run test && npm run docs",
+    "release": "npm run build && dsc publish -t",
     "husky": "husky install && echo 'export PATH=\"/usr/local/bin/:$PATH\"' >> ~/.huskyrc",
     "lint": "eslint 'src/**/*.{js,ts}' --fix",
     "prepare": "husky install && echo 'export PATH=\"/usr/local/bin/:$PATH\"' >> ~/.huskyrc"
@@ -29,9 +30,11 @@
   ],
   "files": [
     "lib",
-    "es"
+    "es",
+    "docs"
   ],
   "author": "woshiajuana <979703986@qq.com>",
+  "sideEffects": false,
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/daysnap/utils/issues"
@@ -58,6 +61,8 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^27.1.4",
     "ts-node": "^10.9.1",
+    "typedoc": "^0.23.21",
+    "typedoc-plugin-markdown": "^3.14.0",
     "typescript": "^4.8.4"
   },
   "publishConfig": {

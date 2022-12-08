@@ -2,17 +2,15 @@ import { parseQuery } from '../src'
 
 describe('parseQuery', () => {
   it('正常工作', () => {
-    const received = parseQuery(
-      'https://www.baidu.com/s?wd=%E6%B1%BD%E8%BD%A6%E8%A1%97',
-    )
-    expect(received).toEqual({ wd: '汽车街' })
+    const received = parseQuery('https://www.baidu.com/s?wd=daysnap')
+    expect(received).toEqual({ wd: 'daysnap' })
   })
 
   it('两个参数', () => {
     const received = parseQuery(
-      'https://www.baidu.com/s?wd=%E6%B1%BD%E8%BD%A6%E8%A1%97',
+      'https://www.baidu.com/s?wd=daysnap&version=1',
       'wd',
     )
-    expect(received).toEqual('汽车街')
+    expect(received).toEqual('daysnap')
   })
 })
