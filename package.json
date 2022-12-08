@@ -30,9 +30,11 @@
   ],
   "files": [
     "lib",
-    "es"
+    "es",
+    "docs"
   ],
   "author": "woshiajuana <979703986@qq.com>",
+  "sideEffects": false,
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/daysnap/utils/issues"
