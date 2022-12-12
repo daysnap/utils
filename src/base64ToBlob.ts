@@ -1,5 +1,7 @@
 /**
  * base64 转 blob
+ * @param base64 base64字符串
+ * @param contentType 文件类型
  */
 export function base64ToBlob(base64: string, contentType?: string) {
   const [prefix, rest] = base64.split(',')
