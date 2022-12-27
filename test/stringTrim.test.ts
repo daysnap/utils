@@ -1,6 +1,6 @@
 import { stringTrim } from '../src'
 
-describe('parseQuery', () => {
+describe('stringTrim', () => {
   it('去除所有空格', () => {
     const received = stringTrim(' hel lo ', 1)
     expect(received).toEqual('hello')
