@@ -15,5 +15,6 @@ export function getBlobByUrl(url: string) {
         reject(new Error(`${statusText}[${status}]`))
       }
     }
+    xhr.send()
   })
 }
