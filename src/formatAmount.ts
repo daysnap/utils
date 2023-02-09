@@ -1,8 +1,8 @@
 /**
  * 格式化金额，默认元
  */
-export function formatAmount(s: string, radix = 1) {
-  const money = parseFloat(s)
+export function formatAmount(s: string | number, radix = 1) {
+  const money = parseFloat(s.toString())
   if (money) {
     // eslint-disable-next-line no-param-reassign
     s = `${(money / radix).toFixed(2)}`

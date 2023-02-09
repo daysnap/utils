@@ -2,18 +2,21 @@ export function factory(type: 'sessionStorage' | 'localStorage') {
   const fn = window[type]
 
   // 设置
-  const setItem = <T>(key: string, val: T) => {
+  const setItem = <T = any>(key: string, val: T) => {
     fn.setItem(key, JSON.stringify(val))
     return val
   }
 
   // 获取
-  const getItem = <T>(key: string, defaultVal: Partial<T> | null = null) => {
+  const getItem = <T = any>(
+    key: string,
+    defaultVal: Partial<T> | null = null,
+  ): T => {
     const val = fn.getItem(key)
 
     // 如果为 null 取默认值
     if (val === null) {
-      return defaultVal
+      return defaultVal as any
     }
 
     return JSON.parse(val)
@@ -25,7 +28,7 @@ export function factory(type: 'sessionStorage' | 'localStorage') {
   }
 
   // 更新
-  const updateItem = <T>(key: string, val: Partial<T>) => {
+  const updateItem = <T = any>(key: string, val: Partial<T>) => {
     const prev = getItem(key)
     return setItem<T>(key, { ...prev, ...val })
   }
@@ -36,7 +39,7 @@ export function factory(type: 'sessionStorage' | 'localStorage') {
   }
 
   // 生成
-  const generate = <T>(key: string) => {
+  const generate = <T = any>(key: string) => {
     return {
       setItem: (val: T) => setItem<T>(key, val),
       getItem: (defaultVal?: Partial<T>) => getItem<T>(key, defaultVal),
