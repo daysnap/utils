@@ -2,6 +2,7 @@
 
 export * from './base64ToBlob'
 export * from './blobToBase64'
+export * from './canvasToBlob'
 export * from './clone'
 export * from './compareVersion'
 export * from './compressImage'
