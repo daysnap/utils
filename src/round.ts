@@ -4,7 +4,6 @@
  * @param fractionDigits 需要保留的小数点位数
  */
 export function round(val: number, fractionDigits: number) {
-  // todo
   const number = val
   if (number >= 10 ** 21) {
     return number.toString()

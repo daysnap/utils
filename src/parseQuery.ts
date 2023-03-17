@@ -6,12 +6,15 @@ import { isJSONString } from './isJSONString'
  * @param k 键名
  */
 export function parseQuery(v?: string, k?: string) {
-  const url = new URL(v)
+  const url = new URL(v ?? '')
   const searchStr = v ? url.search : window.location.search
   const query = new URLSearchParams(decodeURIComponent(searchStr))
   // 单个直接返回
-  if (k) return query.get(k)
-  const res = {}
+  if (k) {
+    return query.get(k)
+  }
+
+  const res: any = {}
   // eslint-disable-next-line no-restricted-syntax
   for (const [key, value] of query.entries()) {
     res[key] = isJSONString(value) ? JSON.parse(value) : value

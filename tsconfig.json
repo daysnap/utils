@@ -1,17 +1,18 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "moduleResolution": "node",
     "baseUrl": "./",
     "jsx": "preserve",
-    "declaration": true,
+    "strict": true,
+    "target": "ES2015",
+    "module": "CommonJS",
     "skipLibCheck": true,
+    "declaration": true,
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "outDir": "./lib"
   },
   "include": [
     "src/**/*.ts",
-    "test/**/*.ts",
   ],
   "exclude": ["node_modules"]
 }

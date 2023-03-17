@@ -1,10 +1,9 @@
 /**
- *去除字符串空格
+ * 去除字符串空格
+ * @param str 字符串值
+ * @param type 方式 1-所有空格，2-前后空格，3-前空格，4-后空格
  */
-export function stringTrim(str: string, type?: 1 | 2 | 3 | 4) {
-  // 1-所有空格，2-前后空格，3-前空格，4-后空格
-  // eslint-disable-next-line no-param-reassign
-  type = type ?? 1
+export function stringTrim(str: string, type: 1 | 2 | 3 | 4 = 1) {
   switch (type) {
     case 1:
       return str.replace(/\s+/g, '')

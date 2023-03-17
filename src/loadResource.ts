@@ -9,9 +9,9 @@ import { isFunction } from './isFunction'
 export function loadResource(
   res: string,
   type: 'js' | 'css' | 'style',
-  callback?,
+  callback?: () => void,
 ) {
-  let ref: HTMLElement
+  let ref: HTMLElement | null = null
   if (type === 'js') {
     // 外部js
     ref = document.createElement('js')
@@ -28,7 +28,7 @@ export function loadResource(
     ref.innerHTML = res
   }
   if (ref) {
-    document.querySelector('head').appendChild(ref)
+    document.querySelector('head')?.appendChild(ref)
     ref.onload = () => {
       if (isFunction(callback)) callback()
     }

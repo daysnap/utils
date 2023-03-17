@@ -10,7 +10,7 @@ export function clone<T>(source: T): T {
     return source
   }
 
-  const target = (isArray(source) ? [] : {}) as T
+  const target = (isArray(source) ? [] : {}) as any
   // eslint-disable-next-line no-restricted-syntax
   for (const key in source) {
     if (source.hasOwnProperty(key)) {

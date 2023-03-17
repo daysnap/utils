@@ -3,10 +3,10 @@
  * 事件频繁触发，只会执行最后一次
  */
 export function debounce<T extends (...args: any[]) => any>(fn: T, ms: number) {
-  let timer = null
+  let timer: any = null
 
   // eslint-disable-next-line func-names
-  return function (...args: Parameters<T>) {
+  return function (this: unknown, ...args: Parameters<T>) {
     clearTimeout(timer)
 
     timer = setTimeout(() => {

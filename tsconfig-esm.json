@@ -1,6 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "./es"
+    "outDir": "./es",
+    "module": "ES6"
   },
 }
