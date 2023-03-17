@@ -6,7 +6,8 @@
     "jsx": "preserve",
     "declaration": true,
     "skipLibCheck": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "outDir": "./lib"
   },
   "include": [
     "src/**/*.ts",
