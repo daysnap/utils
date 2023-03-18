@@ -17,6 +17,12 @@ yarn add @daysnap/utils
 import { debounce } from '@daysnap/utils'
 ```
 
+## eslint prettier
+
+- `eslint-config-prettier`
+- `eslint-plugin-prettier`
+- `prettier`
+
 ## 详情文档
 
 [Exports](./docs/modules.md)
