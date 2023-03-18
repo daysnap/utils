@@ -4,12 +4,15 @@
 
 <h1 align="center">@daysnap/utils</h1>
 
-<p align="center">包含日常工作中常用的工具函数。</p>
+<p align="center">日常工作中常用的工具函数</p>
 
 <p align="center">
-    <img src="https://img.shields.io/npm/v/@daysnap/utils?style=flat-square" alt="npm version" />
-    <img src="https://img.shields.io/codecov/c/github/vant-ui/vant/dev.svg?style=flat-square&color=#4fc08d" alt="Coverage Status" />
-    <img src="https://img.shields.io/npm/dm/@daysnap/utils.svg?style=flat-square&color=#4fc08d" alt="downloads" />
+  <a href="https://www.npmjs.org/package/@daysnap/utils">
+     <img src="https://img.shields.io/npm/v/@daysnap/utils.svg" alt="npm version" />
+  </a>
+  <a href="https://npmcharts.com/compare/@daysnap/utils">
+    <img src="https://img.shields.io/npm/dm/@daysnap/utils.svg">
+  </a>
 </p>
 
 
