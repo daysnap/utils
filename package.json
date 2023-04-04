@@ -1,6 +1,6 @@
 {
   "name": "@daysnap/utils",
-  "version": "0.0.45",
+  "version": "0.0.46",
   "description": "通用的工具库",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -22,7 +22,7 @@
     "clean": "npm run clean:es && npm run clean:lib",
     "build:es": "npm run clean:es && tsc -p ./tsconfig-esm.json",
     "build:lib": "npm run clean:lib && tsc -p ./tsconfig.json",
-    "build": "npm run build:es && npm run build:lib",
+    "build": "npm run entry && npm run build:es && npm run build:lib",
     "test": "jest",
     "coverage": "jest --coverage",
     "prerelease": "npm run entry && npm run test && npm run docs",
