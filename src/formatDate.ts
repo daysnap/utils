@@ -1,4 +1,5 @@
 import { isString } from './isString'
+import { formatDateStr } from './formatDateStr'
 
 /**
  * 格式化日期
@@ -10,7 +11,7 @@ export function formatDate(
   let v = val
   if (isString(v)) {
     // fix iOS new Date() 不支持 2020-01-01 格式，需转换为 2020/01/01
-    v = v.replace(/-/g, '/')
+    v = formatDateStr(v)
   }
   const date = new Date(v)
   const o: any = {
