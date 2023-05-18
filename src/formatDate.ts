@@ -3,9 +3,10 @@ import { formatDateStr } from './formatDateStr'
 
 /**
  * 格式化日期
+ * 默认的当前日期 yyyy-MM-dd hh:mm:ss
  */
 export function formatDate(
-  val: string | Date | number,
+  val: string | Date | number = new Date(),
   fmt = 'yyyy-MM-dd hh:mm:ss',
 ) {
   let v = val
