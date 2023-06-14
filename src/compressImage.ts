@@ -3,7 +3,7 @@ import { pick } from './pick'
 /**
  * 压缩图片
  */
-export function compressImage(image: CanvasImageSource) {
+export function compressImage(image: HTMLImageElement) {
   const { width, height } = pick(image, ['width', 'height'])
   const canvas = document.createElement('canvas')
   // eslint-disable-next-line @typescript-eslint/no-non-null-assertion

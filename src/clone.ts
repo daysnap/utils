@@ -5,7 +5,7 @@ import { isObject } from './isObject'
  * 深拷贝
  * @param source 需要转换的值
  * */
-export function clone<T>(source: T): T {
+export function clone<T extends Record<string, any>>(source: T): T {
   if (!isArray(source) && !isObject(source)) {
     return source
   }
