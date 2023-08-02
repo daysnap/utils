@@ -6,8 +6,13 @@ import { isJSONString } from './isJSONString'
  * @param k 键名
  */
 export function parseQuery(v?: string, k?: string) {
-  const url = new URL(v ?? '')
-  const searchStr = v ? url.search : window.location.search
+  let searchStr = ''
+  if (!v) {
+    searchStr = window.location.search
+  } else {
+    const url = new URL(v ?? '')
+    searchStr = url.search
+  }
   const query = new URLSearchParams(decodeURIComponent(searchStr))
   // 单个直接返回
   if (k) {
