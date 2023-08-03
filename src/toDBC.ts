@@ -1,7 +1,7 @@
 /**
  * 半角转换为全角
  */
-export function toCDB(str: string) {
+export function toDBC(str: string) {
   let result = ''
   for (let i = 0; i < str.length; i++) {
     const code = str.charCodeAt(i)
