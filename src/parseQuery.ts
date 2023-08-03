@@ -10,7 +10,7 @@ export function parseQuery(v?: string, k?: string) {
   if (!v) {
     searchStr = window.location.search
   } else {
-    const url = new URL(v ?? '')
+    const url = new URL(v)
     searchStr = url.search
   }
   const query = new URLSearchParams(decodeURIComponent(searchStr))
