@@ -1,7 +1,7 @@
 /**
  * 判断是否是空对象
- * @param v 对象
+ * @param val 对象
  */
-export function isEmptyObject(v: object) {
-  return !Object.keys(v).length
+export function isEmptyObject(val: object) {
+  return !Object.keys(val).length
 }

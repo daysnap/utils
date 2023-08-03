@@ -2,7 +2,7 @@ import { isEmptyObject } from './isEmptyObject'
 import { isString } from './isString'
 
 /**
- * 说明
+ * 对象转 URLSearchParams
  */
 export function stringifyQuery(v: Record<string, any>) {
   if (isEmptyObject(v)) {
