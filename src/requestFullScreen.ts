@@ -1,9 +1,13 @@
 /**
  * 开启全屏
- * 成功则返回true, 如果不支持全屏或开启失败则返回 false
+ * 成功则 resolve , 如果不支持全屏或开启失败则 rejected
+ * [MDN Reference] https://developer.mozilla.org/zh-CN/docs/Web/API/Element/requestFullscreen
  */
-export function requestFullScreen(ele: HTMLElement) {
+export async function requestFullScreen(
+  ele: HTMLElement = window.document.documentElement,
+) {
   const element: any = ele
+
   const fullScreen =
     element.requestFullscreen ||
     element.mozRequestFullScreen ||
@@ -11,8 +15,8 @@ export function requestFullScreen(ele: HTMLElement) {
     element.webkitRequestFullscreen
 
   if (fullScreen) {
-    fullScreen.call(element)
+    return await fullScreen.call(element)
   }
 
-  return !!fullScreen
+  return Promise.reject()
 }
