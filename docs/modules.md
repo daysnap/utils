@@ -8,6 +8,7 @@
 
 - [base64ToBlob](modules.md#base64toblob)
 - [blobToBase64](modules.md#blobtobase64)
+- [cached](modules.md#cached)
 - [camelCase](modules.md#camelcase)
 - [canvasToBlob](modules.md#canvastoblob)
 - [capitalize](modules.md#capitalize)
@@ -19,6 +20,7 @@
 - [debounce](modules.md#debounce)
 - [downloadFile](modules.md#downloadfile)
 - [each](modules.md#each)
+- [exitFullscreen](modules.md#exitfullscreen)
 - [filterBankCardNo](modules.md#filterbankcardno)
 - [filterCRLF](modules.md#filtercrlf)
 - [filterEmoji](modules.md#filteremoji)
@@ -61,6 +63,7 @@
 - [isLan](modules.md#islan)
 - [isLicenseCode](modules.md#islicensecode)
 - [isMobile](modules.md#ismobile)
+- [isNativeFunction](modules.md#isnativefunction)
 - [isNull](modules.md#isnull)
 - [isNumber](modules.md#isnumber)
 - [isObject](modules.md#isobject)
@@ -75,6 +78,7 @@
 - [isWeixin](modules.md#isweixin)
 - [isWindow](modules.md#iswindow)
 - [kebabCase](modules.md#kebabcase)
+- [listGenerator](modules.md#listgenerator)
 - [mousewheel](modules.md#mousewheel)
 - [normalizePath](modules.md#normalizepath)
 - [omit](modules.md#omit)
@@ -87,6 +91,7 @@
 - [pascalCase](modules.md#pascalcase)
 - [pick](modules.md#pick)
 - [replaceCrlf](modules.md#replacecrlf)
+- [requestFullScreen](modules.md#requestfullscreen)
 - [reserve](modules.md#reserve)
 - [rgbToHex](modules.md#rgbtohex)
 - [round](modules.md#round)
@@ -121,7 +126,7 @@ base64 转 blob
 
 #### Defined in
 
-[base64ToBlob.ts:6](https://github.com/daysnap/utils/blob/468ef5c/src/base64ToBlob.ts#L6)
+[base64ToBlob.ts:6](https://github.com/daysnap/utils/blob/71e90a2/src/base64ToBlob.ts#L6)
 
 ___
 
@@ -143,7 +148,48 @@ blob 转 base64
 
 #### Defined in
 
-[blobToBase64.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/blobToBase64.ts#L4)
+[blobToBase64.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/blobToBase64.ts#L4)
+
+___
+
+### cached
+
+▸ **cached**<`T`\>(`fn`): (...`args`: `Parameters`<`T`\>) => `ReturnType`<`T`\>
+
+缓存、记忆函数，缓存函数的运算结果
+需注意缓存的函数得是纯函数
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | extends (...`args`: `any`[]) => `any` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `fn` | `T` |
+
+#### Returns
+
+`fn`
+
+▸ (`...args`): `ReturnType`<`T`\>
+
+##### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...args` | `Parameters`<`T`\> |
+
+##### Returns
+
+`ReturnType`<`T`\>
+
+#### Defined in
+
+[cached.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/cached.ts#L5)
 
 ___
 
@@ -166,7 +212,7 @@ camelCase('hello-world') => helloWorld
 
 #### Defined in
 
-[camelCase.ts:5](https://github.com/daysnap/utils/blob/468ef5c/src/camelCase.ts#L5)
+[camelCase.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/camelCase.ts#L5)
 
 ___
 
@@ -190,7 +236,7 @@ canvas 转 blob 文件
 
 #### Defined in
 
-[canvasToBlob.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/canvasToBlob.ts#L4)
+[canvasToBlob.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/canvasToBlob.ts#L4)
 
 ___
 
@@ -213,7 +259,7 @@ capitalize('hello world') => Hello world
 
 #### Defined in
 
-[capitalize.ts:5](https://github.com/daysnap/utils/blob/468ef5c/src/capitalize.ts#L5)
+[capitalize.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/capitalize.ts#L5)
 
 ___
 
@@ -241,7 +287,7 @@ ___
 
 #### Defined in
 
-[clone.ts:8](https://github.com/daysnap/utils/blob/468ef5c/src/clone.ts#L8)
+[clone.ts:8](https://github.com/daysnap/utils/blob/71e90a2/src/clone.ts#L8)
 
 ___
 
@@ -269,7 +315,7 @@ ___
 
 #### Defined in
 
-[cloneSimple.ts:7](https://github.com/daysnap/utils/blob/468ef5c/src/cloneSimple.ts#L7)
+[cloneSimple.ts:7](https://github.com/daysnap/utils/blob/71e90a2/src/cloneSimple.ts#L7)
 
 ___
 
@@ -291,7 +337,7 @@ ___
 
 #### Defined in
 
-[createHexColorByHash.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/createHexColorByHash.ts#L4)
+[createHexColorByHash.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/createHexColorByHash.ts#L4)
 
 ___
 
@@ -317,7 +363,7 @@ ___
 
 #### Defined in
 
-[compareVersion.ts:9](https://github.com/daysnap/utils/blob/468ef5c/src/compareVersion.ts#L9)
+[compareVersion.ts:9](https://github.com/daysnap/utils/blob/71e90a2/src/compareVersion.ts#L9)
 
 ___
 
@@ -339,7 +385,7 @@ ___
 
 #### Defined in
 
-[compressImage.ts:6](https://github.com/daysnap/utils/blob/468ef5c/src/compressImage.ts#L6)
+[compressImage.ts:6](https://github.com/daysnap/utils/blob/71e90a2/src/compressImage.ts#L6)
 
 ___
 
@@ -382,7 +428,7 @@ ___
 
 #### Defined in
 
-[debounce.ts:5](https://github.com/daysnap/utils/blob/468ef5c/src/debounce.ts#L5)
+[debounce.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/debounce.ts#L5)
 
 ___
 
@@ -406,7 +452,7 @@ ___
 
 #### Defined in
 
-[downloadFile.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/downloadFile.ts#L4)
+[downloadFile.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/downloadFile.ts#L4)
 
 ___
 
@@ -435,7 +481,7 @@ ___
 
 #### Defined in
 
-[each.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/each.ts#L4)
+[each.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/each.ts#L4)
 
 ▸ **each**<`T`\>(`data`, `callback`): `void`
 
@@ -458,7 +504,25 @@ ___
 
 #### Defined in
 
-[each.ts:8](https://github.com/daysnap/utils/blob/468ef5c/src/each.ts#L8)
+[each.ts:8](https://github.com/daysnap/utils/blob/71e90a2/src/each.ts#L8)
+
+___
+
+### exitFullscreen
+
+▸ **exitFullscreen**(): `Promise`<`any`\>
+
+退出全屏
+成功则 resolve , 如果不支持退出全屏或退出失败则 rejected
+[MDN Reference](https://developer.mozilla.org/zh-CN/docs/Web/API/Document/exitFullscreen)
+
+#### Returns
+
+`Promise`<`any`\>
+
+#### Defined in
+
+[exitFullscreen.ts:6](https://github.com/daysnap/utils/blob/71e90a2/src/exitFullscreen.ts#L6)
 
 ___
 
@@ -480,7 +544,7 @@ ___
 
 #### Defined in
 
-[filterBankCardNo.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/filterBankCardNo.ts#L4)
+[filterBankCardNo.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/filterBankCardNo.ts#L4)
 
 ___
 
@@ -502,7 +566,7 @@ ___
 
 #### Defined in
 
-[filterCRLF.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/filterCRLF.ts#L4)
+[filterCRLF.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/filterCRLF.ts#L4)
 
 ___
 
@@ -524,7 +588,7 @@ ___
 
 #### Defined in
 
-[filterEmoji.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/filterEmoji.ts#L4)
+[filterEmoji.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/filterEmoji.ts#L4)
 
 ___
 
@@ -547,7 +611,7 @@ ___
 
 #### Defined in
 
-[filterIdCard.ts:5](https://github.com/daysnap/utils/blob/468ef5c/src/filterIdCard.ts#L5)
+[filterIdCard.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/filterIdCard.ts#L5)
 
 ___
 
@@ -569,7 +633,7 @@ ___
 
 #### Defined in
 
-[filterName.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/filterName.ts#L4)
+[filterName.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/filterName.ts#L4)
 
 ___
 
@@ -594,7 +658,7 @@ filterPhone('13177778888', ' ') => 131 **** 8888
 
 #### Defined in
 
-[filterPhone.ts:6](https://github.com/daysnap/utils/blob/468ef5c/src/filterPhone.ts#L6)
+[filterPhone.ts:6](https://github.com/daysnap/utils/blob/71e90a2/src/filterPhone.ts#L6)
 
 ___
 
@@ -617,7 +681,7 @@ ___
 
 #### Defined in
 
-[formatAmount.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/formatAmount.ts#L4)
+[formatAmount.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/formatAmount.ts#L4)
 
 ___
 
@@ -641,7 +705,7 @@ ___
 
 #### Defined in
 
-[formatDate.ts:8](https://github.com/daysnap/utils/blob/468ef5c/src/formatDate.ts#L8)
+[formatDate.ts:8](https://github.com/daysnap/utils/blob/71e90a2/src/formatDate.ts#L8)
 
 ___
 
@@ -664,7 +728,7 @@ fix iOS 日期时间格式如果是 - 就会报错的问题
 
 #### Defined in
 
-[formatDateStr.ts:5](https://github.com/daysnap/utils/blob/468ef5c/src/formatDateStr.ts#L5)
+[formatDateStr.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/formatDateStr.ts#L5)
 
 ___
 
@@ -689,7 +753,7 @@ formatMessage({ a: '123', b: { ba: '456' } }, ['b.ba']) => '456'
 
 #### Defined in
 
-[formatMessage.ts:11](https://github.com/daysnap/utils/blob/468ef5c/src/formatMessage.ts#L11)
+[formatMessage.ts:11](https://github.com/daysnap/utils/blob/71e90a2/src/formatMessage.ts#L11)
 
 ___
 
@@ -721,7 +785,7 @@ rest = { xxx: 1 }
 
 #### Defined in
 
-[formatPathParams.ts:8](https://github.com/daysnap/utils/blob/468ef5c/src/formatPathParams.ts#L8)
+[formatPathParams.ts:8](https://github.com/daysnap/utils/blob/71e90a2/src/formatPathParams.ts#L8)
 
 ___
 
@@ -743,7 +807,7 @@ ___
 
 #### Defined in
 
-[getBlobByUrl.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/getBlobByUrl.ts#L4)
+[getBlobByUrl.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/getBlobByUrl.ts#L4)
 
 ___
 
@@ -766,7 +830,7 @@ ___
 
 #### Defined in
 
-[storage/index.ts:7](https://github.com/daysnap/utils/blob/468ef5c/src/storage/index.ts#L7)
+[storage/index.ts:7](https://github.com/daysnap/utils/blob/71e90a2/src/storage/index.ts#L7)
 
 ___
 
@@ -788,7 +852,7 @@ ___
 
 #### Defined in
 
-[getDayMillisecond.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/getDayMillisecond.ts#L4)
+[getDayMillisecond.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/getDayMillisecond.ts#L4)
 
 ___
 
@@ -810,7 +874,7 @@ ___
 
 #### Defined in
 
-[getImageInfo.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/getImageInfo.ts#L4)
+[getImageInfo.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/getImageInfo.ts#L4)
 
 ___
 
@@ -833,7 +897,7 @@ ___
 
 #### Defined in
 
-[storage/index.ts:7](https://github.com/daysnap/utils/blob/468ef5c/src/storage/index.ts#L7)
+[storage/index.ts:7](https://github.com/daysnap/utils/blob/71e90a2/src/storage/index.ts#L7)
 
 ___
 
@@ -856,7 +920,7 @@ ___
 
 #### Defined in
 
-[getRandom.ts:6](https://github.com/daysnap/utils/blob/468ef5c/src/getRandom.ts#L6)
+[getRandom.ts:7](https://github.com/daysnap/utils/blob/71e90a2/src/getRandom.ts#L7)
 
 ___
 
@@ -872,7 +936,7 @@ ___
 
 #### Defined in
 
-[getRandomColor.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/getRandomColor.ts#L4)
+[getRandomColor.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/getRandomColor.ts#L4)
 
 ___
 
@@ -894,7 +958,7 @@ ___
 
 #### Defined in
 
-[getRandomNumber.ts:7](https://github.com/daysnap/utils/blob/468ef5c/src/getRandomNumber.ts#L7)
+[getRandomNumber.ts:7](https://github.com/daysnap/utils/blob/71e90a2/src/getRandomNumber.ts#L7)
 
 ___
 
@@ -916,7 +980,7 @@ ___
 
 #### Defined in
 
-[getVideoInfo.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/getVideoInfo.ts#L4)
+[getVideoInfo.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/getVideoInfo.ts#L4)
 
 ___
 
@@ -932,7 +996,7 @@ ___
 
 #### Defined in
 
-[inBrowser.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/inBrowser.ts#L4)
+[inBrowser.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/inBrowser.ts#L4)
 
 ___
 
@@ -954,7 +1018,7 @@ ___
 
 #### Defined in
 
-[insertLink.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/insertLink.ts#L4)
+[insertLink.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/insertLink.ts#L4)
 
 ▸ **insertLink**(`href`, `callback`): `void`
 
@@ -971,7 +1035,7 @@ ___
 
 #### Defined in
 
-[insertLink.ts:5](https://github.com/daysnap/utils/blob/468ef5c/src/insertLink.ts#L5)
+[insertLink.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/insertLink.ts#L5)
 
 ___
 
@@ -993,7 +1057,7 @@ ___
 
 #### Defined in
 
-[insertScript.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/insertScript.ts#L4)
+[insertScript.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/insertScript.ts#L4)
 
 ▸ **insertScript**(`src`, `callback`): `void`
 
@@ -1010,7 +1074,7 @@ ___
 
 #### Defined in
 
-[insertScript.ts:5](https://github.com/daysnap/utils/blob/468ef5c/src/insertScript.ts#L5)
+[insertScript.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/insertScript.ts#L5)
 
 ___
 
@@ -1032,7 +1096,7 @@ ___
 
 #### Defined in
 
-[insertStyle.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/insertStyle.ts#L4)
+[insertStyle.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/insertStyle.ts#L4)
 
 ___
 
@@ -1061,7 +1125,7 @@ isAmount('1.123') => false
 
 #### Defined in
 
-[isAmount.ts:11](https://github.com/daysnap/utils/blob/468ef5c/src/isAmount.ts#L11)
+[isAmount.ts:11](https://github.com/daysnap/utils/blob/71e90a2/src/isAmount.ts#L11)
 
 ___
 
@@ -1077,7 +1141,7 @@ ___
 
 #### Defined in
 
-[isAndroid.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/isAndroid.ts#L4)
+[isAndroid.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/isAndroid.ts#L4)
 
 ___
 
@@ -1101,7 +1165,7 @@ val is any[]
 
 #### Defined in
 
-[isArray.ts:6](https://github.com/daysnap/utils/blob/468ef5c/src/isArray.ts#L6)
+[isArray.ts:6](https://github.com/daysnap/utils/blob/71e90a2/src/isArray.ts#L6)
 
 ___
 
@@ -1123,7 +1187,7 @@ val is boolean
 
 #### Defined in
 
-[isBoolean.ts:5](https://github.com/daysnap/utils/blob/468ef5c/src/isBoolean.ts#L5)
+[isBoolean.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/isBoolean.ts#L5)
 
 ___
 
@@ -1145,7 +1209,7 @@ ___
 
 #### Defined in
 
-[isChinese.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/isChinese.ts#L4)
+[isChinese.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/isChinese.ts#L4)
 
 ___
 
@@ -1167,7 +1231,7 @@ val is Date
 
 #### Defined in
 
-[isDate.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/isDate.ts#L4)
+[isDate.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/isDate.ts#L4)
 
 ___
 
@@ -1189,7 +1253,7 @@ ___
 
 #### Defined in
 
-[isEmail.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/isEmail.ts#L4)
+[isEmail.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/isEmail.ts#L4)
 
 ___
 
@@ -1211,7 +1275,7 @@ ___
 
 #### Defined in
 
-[isEmpty.ts:6](https://github.com/daysnap/utils/blob/468ef5c/src/isEmpty.ts#L6)
+[isEmpty.ts:6](https://github.com/daysnap/utils/blob/71e90a2/src/isEmpty.ts#L6)
 
 ___
 
@@ -1233,7 +1297,7 @@ ___
 
 #### Defined in
 
-[isEmptyObject.ts:5](https://github.com/daysnap/utils/blob/468ef5c/src/isEmptyObject.ts#L5)
+[isEmptyObject.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/isEmptyObject.ts#L5)
 
 ___
 
@@ -1255,7 +1319,7 @@ val is Error
 
 #### Defined in
 
-[isError.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/isError.ts#L4)
+[isError.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/isError.ts#L4)
 
 ___
 
@@ -1277,7 +1341,7 @@ val is Function
 
 #### Defined in
 
-[isFunction.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/isFunction.ts#L4)
+[isFunction.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/isFunction.ts#L4)
 
 ___
 
@@ -1295,7 +1359,7 @@ ___
 
 #### Defined in
 
-[isIE.ts:6](https://github.com/daysnap/utils/blob/468ef5c/src/isIE.ts#L6)
+[isIE.ts:6](https://github.com/daysnap/utils/blob/71e90a2/src/isIE.ts#L6)
 
 ___
 
@@ -1311,7 +1375,7 @@ ___
 
 #### Defined in
 
-[isIOS.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/isIOS.ts#L4)
+[isIOS.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/isIOS.ts#L4)
 
 ___
 
@@ -1333,7 +1397,7 @@ ___
 
 #### Defined in
 
-[isIdCard.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/isIdCard.ts#L4)
+[isIdCard.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/isIdCard.ts#L4)
 
 ___
 
@@ -1355,7 +1419,7 @@ ___
 
 #### Defined in
 
-[isJSONString.ts:7](https://github.com/daysnap/utils/blob/468ef5c/src/isJSONString.ts#L7)
+[isJSONString.ts:7](https://github.com/daysnap/utils/blob/71e90a2/src/isJSONString.ts#L7)
 
 ___
 
@@ -1377,7 +1441,7 @@ ___
 
 #### Defined in
 
-[isLan.ts:5](https://github.com/daysnap/utils/blob/468ef5c/src/isLan.ts#L5)
+[isLan.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/isLan.ts#L5)
 
 ___
 
@@ -1399,7 +1463,7 @@ ___
 
 #### Defined in
 
-[isLicenseCode.ts:5](https://github.com/daysnap/utils/blob/468ef5c/src/isLicenseCode.ts#L5)
+[isLicenseCode.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/isLicenseCode.ts#L5)
 
 ___
 
@@ -1415,7 +1479,30 @@ ___
 
 #### Defined in
 
-[isMobile.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/isMobile.ts#L4)
+[isMobile.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/isMobile.ts#L4)
+
+___
+
+### isNativeFunction
+
+▸ **isNativeFunction**(`val`): `boolean`
+
+判断是不是内置函数
+内置函数toString后的主体代码块为 [native code]
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `val` | `unknown` |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+[isNativeFunction.ts:7](https://github.com/daysnap/utils/blob/71e90a2/src/isNativeFunction.ts#L7)
 
 ___
 
@@ -1437,7 +1524,7 @@ val is null
 
 #### Defined in
 
-[isNull.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/isNull.ts#L4)
+[isNull.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/isNull.ts#L4)
 
 ___
 
@@ -1459,7 +1546,7 @@ val is number
 
 #### Defined in
 
-[isNumber.ts:5](https://github.com/daysnap/utils/blob/468ef5c/src/isNumber.ts#L5)
+[isNumber.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/isNumber.ts#L5)
 
 ___
 
@@ -1481,7 +1568,7 @@ val is Record<string, any\>
 
 #### Defined in
 
-[isObject.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/isObject.ts#L4)
+[isObject.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/isObject.ts#L4)
 
 ___
 
@@ -1503,7 +1590,7 @@ ___
 
 #### Defined in
 
-[isPhone.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/isPhone.ts#L4)
+[isPhone.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/isPhone.ts#L4)
 
 ___
 
@@ -1531,7 +1618,7 @@ val is Promise<T\>
 
 #### Defined in
 
-[isPromise.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/isPromise.ts#L4)
+[isPromise.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/isPromise.ts#L4)
 
 ___
 
@@ -1553,7 +1640,7 @@ val is RegExp
 
 #### Defined in
 
-[isRegExp.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/isRegExp.ts#L4)
+[isRegExp.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/isRegExp.ts#L4)
 
 ___
 
@@ -1575,7 +1662,7 @@ val is string
 
 #### Defined in
 
-[isString.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/isString.ts#L4)
+[isString.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/isString.ts#L4)
 
 ___
 
@@ -1597,7 +1684,7 @@ ___
 
 #### Defined in
 
-[isURL.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/isURL.ts#L4)
+[isURL.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/isURL.ts#L4)
 
 ___
 
@@ -1619,7 +1706,7 @@ val is undefined
 
 #### Defined in
 
-[isUndefined.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/isUndefined.ts#L4)
+[isUndefined.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/isUndefined.ts#L4)
 
 ___
 
@@ -1635,7 +1722,7 @@ ___
 
 #### Defined in
 
-[isWeChat.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/isWeChat.ts#L4)
+[isWeChat.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/isWeChat.ts#L4)
 
 ___
 
@@ -1652,7 +1739,7 @@ https://developers.weixin.qq.com/miniprogram/dev/component/web-view.html
 
 #### Defined in
 
-[isWeChatMiniProgram.ts:5](https://github.com/daysnap/utils/blob/468ef5c/src/isWeChatMiniProgram.ts#L5)
+[isWeChatMiniProgram.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/isWeChatMiniProgram.ts#L5)
 
 ___
 
@@ -1672,7 +1759,7 @@ ___
 
 #### Defined in
 
-[isWeChat.ts:12](https://github.com/daysnap/utils/blob/468ef5c/src/isWeChat.ts#L12)
+[isWeChat.ts:12](https://github.com/daysnap/utils/blob/71e90a2/src/isWeChat.ts#L12)
 
 ___
 
@@ -1694,7 +1781,7 @@ val is Window
 
 #### Defined in
 
-[isWindow.ts:5](https://github.com/daysnap/utils/blob/468ef5c/src/isWindow.ts#L5)
+[isWindow.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/isWindow.ts#L5)
 
 ___
 
@@ -1717,7 +1804,36 @@ kebabCase('helloWorld') => hello-world
 
 #### Defined in
 
-[kebabCase.ts:5](https://github.com/daysnap/utils/blob/468ef5c/src/kebabCase.ts#L5)
+[kebabCase.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/kebabCase.ts#L5)
+
+___
+
+### listGenerator
+
+▸ **listGenerator**<`T`\>(`length`, `fn`): `T`[]
+
+list 生成器，快速生成数据
+
+#### Type parameters
+
+| Name | Type |
+| :------ | :------ |
+| `T` | `any` |
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `length` | `number` | 个数 |
+| `fn` | (`index`: `number`) => `T` | - |
+
+#### Returns
+
+`T`[]
+
+#### Defined in
+
+[listGenerator.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/listGenerator.ts#L5)
 
 ___
 
@@ -1742,7 +1858,7 @@ ___
 
 #### Defined in
 
-[mousewheel.ts:22](https://github.com/daysnap/utils/blob/468ef5c/src/mousewheel.ts#L22)
+[mousewheel.ts:22](https://github.com/daysnap/utils/blob/71e90a2/src/mousewheel.ts#L22)
 
 ___
 
@@ -1764,7 +1880,7 @@ ___
 
 #### Defined in
 
-[normalizePath.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/normalizePath.ts#L4)
+[normalizePath.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/normalizePath.ts#L4)
 
 ___
 
@@ -1794,7 +1910,7 @@ ___
 
 #### Defined in
 
-[omit.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/omit.ts#L4)
+[omit.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/omit.ts#L4)
 
 ___
 
@@ -1818,7 +1934,7 @@ ___
 
 #### Defined in
 
-[padding.ts:7](https://github.com/daysnap/utils/blob/468ef5c/src/padding.ts#L7)
+[padding.ts:7](https://github.com/daysnap/utils/blob/71e90a2/src/padding.ts#L7)
 
 ___
 
@@ -1840,7 +1956,7 @@ ___
 
 #### Defined in
 
-[parseDate.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/parseDate.ts#L4)
+[parseDate.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/parseDate.ts#L4)
 
 ___
 
@@ -1863,7 +1979,7 @@ ___
 
 #### Defined in
 
-[parseError.ts:8](https://github.com/daysnap/utils/blob/468ef5c/src/parseError.ts#L8)
+[parseError.ts:8](https://github.com/daysnap/utils/blob/71e90a2/src/parseError.ts#L8)
 
 ___
 
@@ -1893,7 +2009,7 @@ parseObject('a.b.c', 1) => { a: { b: { c: 1 } } }
 
 #### Defined in
 
-[parseObject.ts:5](https://github.com/daysnap/utils/blob/468ef5c/src/parseObject.ts#L5)
+[parseObject.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/parseObject.ts#L5)
 
 ___
 
@@ -1922,7 +2038,7 @@ ___
 
 #### Defined in
 
-[parsePath.ts:6](https://github.com/daysnap/utils/blob/468ef5c/src/parsePath.ts#L6)
+[parsePath.ts:6](https://github.com/daysnap/utils/blob/71e90a2/src/parsePath.ts#L6)
 
 ___
 
@@ -1945,7 +2061,7 @@ ___
 
 #### Defined in
 
-[parseQuery.ts:8](https://github.com/daysnap/utils/blob/468ef5c/src/parseQuery.ts#L8)
+[parseQuery.ts:8](https://github.com/daysnap/utils/blob/71e90a2/src/parseQuery.ts#L8)
 
 ___
 
@@ -1968,7 +2084,7 @@ pascalCase('hello-world') => HelloWorld
 
 #### Defined in
 
-[pascalCase.ts:8](https://github.com/daysnap/utils/blob/468ef5c/src/pascalCase.ts#L8)
+[pascalCase.ts:8](https://github.com/daysnap/utils/blob/71e90a2/src/pascalCase.ts#L8)
 
 ___
 
@@ -1998,7 +2114,7 @@ ___
 
 #### Defined in
 
-[pick.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/pick.ts#L4)
+[pick.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/pick.ts#L4)
 
 ___
 
@@ -2021,7 +2137,31 @@ ___
 
 #### Defined in
 
-[replaceCrlf.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/replaceCrlf.ts#L4)
+[replaceCrlf.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/replaceCrlf.ts#L4)
+
+___
+
+### requestFullScreen
+
+▸ **requestFullScreen**(`ele?`): `Promise`<`any`\>
+
+开启全屏
+成功则 resolve , 如果不支持全屏或开启失败则 rejected
+[MDN Reference] https://developer.mozilla.org/zh-CN/docs/Web/API/Element/requestFullscreen
+
+#### Parameters
+
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `ele` | `HTMLElement` | `window.document.documentElement` |
+
+#### Returns
+
+`Promise`<`any`\>
+
+#### Defined in
+
+[requestFullScreen.ts:6](https://github.com/daysnap/utils/blob/71e90a2/src/requestFullScreen.ts#L6)
 
 ___
 
@@ -2047,7 +2187,7 @@ reserve(0, '--') => 0
 
 #### Defined in
 
-[reserve.ts:8](https://github.com/daysnap/utils/blob/468ef5c/src/reserve.ts#L8)
+[reserve.ts:8](https://github.com/daysnap/utils/blob/71e90a2/src/reserve.ts#L8)
 
 ___
 
@@ -2071,7 +2211,7 @@ ___
 
 #### Defined in
 
-[rgbToHex.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/rgbToHex.ts#L4)
+[rgbToHex.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/rgbToHex.ts#L4)
 
 ___
 
@@ -2094,7 +2234,7 @@ ___
 
 #### Defined in
 
-[round.ts:6](https://github.com/daysnap/utils/blob/468ef5c/src/round.ts#L6)
+[round.ts:6](https://github.com/daysnap/utils/blob/71e90a2/src/round.ts#L6)
 
 ___
 
@@ -2110,7 +2250,7 @@ ___
 
 #### Defined in
 
-[scrollToTop.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/scrollToTop.ts#L4)
+[scrollToTop.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/scrollToTop.ts#L4)
 
 ___
 
@@ -2133,7 +2273,7 @@ ___
 
 #### Defined in
 
-[sleep.ts:6](https://github.com/daysnap/utils/blob/468ef5c/src/sleep.ts#L6)
+[sleep.ts:6](https://github.com/daysnap/utils/blob/71e90a2/src/sleep.ts#L6)
 
 ___
 
@@ -2162,7 +2302,7 @@ ___
 
 #### Defined in
 
-[splitArray.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/splitArray.ts#L4)
+[splitArray.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/splitArray.ts#L4)
 
 ___
 
@@ -2185,7 +2325,7 @@ ___
 
 #### Defined in
 
-[stringTrim.ts:6](https://github.com/daysnap/utils/blob/468ef5c/src/stringTrim.ts#L6)
+[stringTrim.ts:6](https://github.com/daysnap/utils/blob/71e90a2/src/stringTrim.ts#L6)
 
 ___
 
@@ -2207,7 +2347,7 @@ ___
 
 #### Defined in
 
-[stringifyQuery.ts:7](https://github.com/daysnap/utils/blob/468ef5c/src/stringifyQuery.ts#L7)
+[stringifyQuery.ts:7](https://github.com/daysnap/utils/blob/71e90a2/src/stringifyQuery.ts#L7)
 
 ___
 
@@ -2250,7 +2390,7 @@ ___
 
 #### Defined in
 
-[throttle.ts:5](https://github.com/daysnap/utils/blob/468ef5c/src/throttle.ts#L5)
+[throttle.ts:5](https://github.com/daysnap/utils/blob/71e90a2/src/throttle.ts#L5)
 
 ___
 
@@ -2272,7 +2412,7 @@ ___
 
 #### Defined in
 
-[toCDB.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/toCDB.ts#L4)
+[toCDB.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/toCDB.ts#L4)
 
 ___
 
@@ -2294,7 +2434,7 @@ ___
 
 #### Defined in
 
-[toDBC.ts:4](https://github.com/daysnap/utils/blob/468ef5c/src/toDBC.ts#L4)
+[toDBC.ts:4](https://github.com/daysnap/utils/blob/71e90a2/src/toDBC.ts#L4)
 
 ___
 
@@ -2318,4 +2458,4 @@ ___
 
 #### Defined in
 
-[typeOf.ts:6](https://github.com/daysnap/utils/blob/468ef5c/src/typeOf.ts#L6)
+[typeOf.ts:6](https://github.com/daysnap/utils/blob/71e90a2/src/typeOf.ts#L6)
