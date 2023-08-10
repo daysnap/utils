@@ -2,6 +2,7 @@ import { isEmpty } from './isEmpty'
 import { isEmptyArray } from './isEmptyArray'
 import { isEmptyObject } from './isEmptyObject'
 import { isFunction } from './isFunction'
+import { isObject } from './isObject'
 
 /**
  * 过滤对象的 undefined null '' 属性，返回一个新对象
@@ -19,7 +20,10 @@ export function filterEmptyValue(
       } else {
         if (!isEmpty(value)) {
           if (expand) {
-            if (!isEmptyArray(value) && !isEmptyObject(value)) {
+            if (
+              !isEmptyArray(value) &&
+              !(isObject(value) && isEmptyObject(value))
+            ) {
               res[key] = value
             }
           } else {
