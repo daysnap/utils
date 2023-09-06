@@ -1,5 +1,7 @@
 import { factory } from './factory'
 
+export * from './factory'
+
 type FactoryReturn = ReturnType<typeof factory>
 
 const getStorage = (type: 'sessionStorage' | 'localStorage') => {
