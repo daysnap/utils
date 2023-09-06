@@ -1,3 +1,10 @@
+export interface StorageManager<T = any> {
+  setItem(val: T): T
+  getItem(defaultVal?: Partial<T>): T
+  removeItem(): void
+  updateItem(val: Partial<T>): T
+}
+
 export function factory(type: 'sessionStorage' | 'localStorage') {
   const fn = window[type]
 
