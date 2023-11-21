@@ -22,7 +22,7 @@ export function createWithLoading<O = any>(
       }
       const toast = options ? showLoading(options) : null
       try {
-        return await fn(params)
+        return await fn(...params)
         // eslint-disable-next-line no-useless-catch
       } catch (error) {
         throw error
