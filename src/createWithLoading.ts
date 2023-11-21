@@ -8,10 +8,11 @@ import { Loose } from '@daysnap/types'
  */
 export function createWithLoading<O = any>(
   showLoading: (options: O) => Loose<{ close: () => any }>,
+  defaultOptions?: O,
 ) {
   return function withLoading<T extends (...args: any[]) => Promise<any>>(
     fn: T,
-    options?: O,
+    options: O = defaultOptions as any,
   ) {
     return async (
       ...params: [...Parameters<T>, O?]
