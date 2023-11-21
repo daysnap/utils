@@ -5,6 +5,7 @@
  * @param max 最大值
  */
 export function clamp(min: number, val: number, max: number) {
+  // Math.min(Math.max(min, val), max)
   if (val < min) {
     return min
   }
