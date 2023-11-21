@@ -8,6 +8,7 @@ export function getImageInfo(src: string) {
       resolve(image)
     }
     image.onerror = reject
+    image.setAttribute('crossOrigin', 'Anonymous')
     image.src = src
   })
 }
