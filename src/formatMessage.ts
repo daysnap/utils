@@ -12,7 +12,7 @@ export function formatMessage(
   message: unknown,
   keys: string[] = ['message', 'msg', 'errorMsg'],
 ): string {
-  if (isNull(message)) {
+  if (isNull(message) || isUndefined(message)) {
     return ''
   }
 
