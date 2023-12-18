@@ -12,7 +12,6 @@ export function formatDateToZN(v: string | number): string {
   const days = Math.floor(hours / 24)
   const weeks = Math.floor(days / 7)
 
-  console.log(diff, seconds, minutes, hours, days, weeks)
   // 判断时间间隔，并返回相应的表示方式
   if (weeks >= 4) {
     return formatDate(timestamp, 'yyyy-MM-dd hh:mm')
