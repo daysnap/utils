@@ -45,3 +45,17 @@ export const trap: Trap = {
     this.list = {}
   },
 }
+
+export function createTrapInstance<T = any>(id: string) {
+  return {
+    trigger(data?: T) {
+      return trap.trigger(id, data)
+    },
+    create(cb: (data: T) => void) {
+      return trap.create(id, cb)
+    },
+    delete() {
+      return trap.delete(id)
+    },
+  }
+}
