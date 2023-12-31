@@ -6,7 +6,7 @@ export function throttleLeading<T extends (...args: any[]) => any>(
   fn: T,
   ms: number,
 ) {
-  let pre = Date.now()
+  let pre = 0
 
   // eslint-disable-next-line func-names
   return function (this: unknown, ...args: Parameters<T>) {
