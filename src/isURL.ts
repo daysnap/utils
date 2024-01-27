@@ -1,6 +1,6 @@
 /**
- * 判断是否是 url
+ * 判断是否是链接
  */
-export function isURL(val: unknown) {
-  return /^(http)|(\.*\/)/.test(`${val}`)
+export function isUrl(val: string) {
+  return /^((https|http|ftp|rtsp|mms)?:\/\/)[^\s]+/.test(val)
 }
