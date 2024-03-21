@@ -10,7 +10,7 @@ import { parsePath } from './parsePath'
  */
 export function formatMessage(
   message: unknown,
-  keys: string[] = ['message', 'msg', 'errorMsg'],
+  keys: string[] = ['message', 'msg', 'errMsg', 'errorMsg'],
 ): string {
   if (isNull(message) || isUndefined(message)) {
     return ''
