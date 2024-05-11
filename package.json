@@ -1,6 +1,6 @@
 {
   "name": "@daysnap/utils",
-  "version": "0.0.90",
+  "version": "0.0.91",
   "description": "通用的工具库",
   "main": "lib/index.js",
   "module": "es/index.js",
