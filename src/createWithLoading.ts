@@ -1,5 +1,7 @@
 import { Loose } from '@daysnap/types'
 
+type WithFalse<T> = T | false
+
 /**
  * loading 生成器
  * const withLoading = createWithLoading(() => showLoading())
@@ -12,13 +14,13 @@ export function createWithLoading<O = any>(
 ) {
   return function withLoading<T extends (...args: any[]) => Promise<any>>(
     fn: T,
-    options: O | false = defaultOptions as any,
+    options: WithFalse<O> = defaultOptions as any,
   ) {
     return async (
-      ...params: [...Parameters<T>, O?]
+      ...params: [...Parameters<T>, WithFalse<O>?]
     ): Promise<Awaited<ReturnType<T>>> => {
       if (params.length > fn.length) {
-        options = params.pop() as O
+        options = params.pop() as WithFalse<O>
       }
       const toast = options ? showLoading(options) : null
       try {
