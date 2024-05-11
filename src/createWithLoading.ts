@@ -12,7 +12,7 @@ export function createWithLoading<O = any>(
 ) {
   return function withLoading<T extends (...args: any[]) => Promise<any>>(
     fn: T,
-    options: O = defaultOptions as any,
+    options: O | false = defaultOptions as any,
   ) {
     return async (
       ...params: [...Parameters<T>, O?]
