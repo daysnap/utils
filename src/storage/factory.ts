@@ -1,3 +1,6 @@
+import { isArray } from '../isArray'
+import { isObject } from '../isObject'
+
 export interface StorageManager<T = any> {
   setItem(val: T): T
   getItem(defaultVal?: Partial<T>): T
@@ -37,7 +40,12 @@ export function factory(type: 'sessionStorage' | 'localStorage') {
   // 更新
   const updateItem = <T = any>(key: string, val: Partial<T>) => {
     const prev = getItem(key)
-    return setItem<T>(key, { ...prev, ...val })
+    if (isArray(val)) {
+      val = [...(prev || []), ...val] as any
+    } else if (isObject(val)) {
+      val = { ...prev, ...val }
+    }
+    return setItem<T>(key, val as T)
   }
 
   // 清除
