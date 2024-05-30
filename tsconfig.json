@@ -4,10 +4,10 @@
     "jsx": "preserve",
     "strict": true,
     "target": "ES2015",
-    "module": "CommonJS",
+    "module": "NodeNext",
     "skipLibCheck": true,
     "declaration": true,
-    "moduleResolution": "node",
+    "moduleResolution": "NodeNext",
     "esModuleInterop": true,
     "outDir": "./lib"
   },
