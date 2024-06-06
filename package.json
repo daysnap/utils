@@ -7,7 +7,7 @@
   "types": "es/index.d.mts",
   "exports": {
     ".": {
-      "import": "./es/index.js",
+      "import": "./es/index.mts",
       "types": "./es/index.d.mts",
       "require": "./lib/index.js"
     },
