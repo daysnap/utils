@@ -1,13 +1,15 @@
 import { defineConfig } from 'tsup'
 
+// docs https://tsup.egoist.dev/
 export default defineConfig([
   {
     entry: ['src/**/*.ts'],
     outDir: 'es',
+    splitting: true,
     sourcemap: false,
-    // splitting: false,
     clean: true,
     dts: true,
+    shims: true,
     target: 'esnext',
     format: ['esm'],
   },
@@ -18,6 +20,7 @@ export default defineConfig([
     sourcemap: false,
     clean: true,
     dts: true,
+    shims: true,
     target: 'esnext',
     format: ['cjs'],
   },

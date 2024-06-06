@@ -3,14 +3,22 @@
   "version": "0.0.93",
   "description": "通用的工具库",
   "main": "lib/index.js",
-  "module": "es/index.js",
-  "types": "es/index.d.ts",
+  "module": "es/index.mjs",
+  "types": "es/index.d.mts",
   "exports": {
     ".": {
       "import": "./es/index.js",
+      "types": "./es/index.d.mts",
       "require": "./lib/index.js"
     },
     "./*": "./*"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./es/*"
+      ]
+    }
   },
   "scripts": {
     "gen": "plop --plopfile ./scripts/gen.js --force",
@@ -20,13 +28,13 @@
     "clean:es": "rimraf ./es",
     "clean:lib": "rimraf ./lib",
     "clean": "npm run clean:es && npm run clean:lib",
-    "build": "tsup",
+    "build": "npm run clean && tsup",
     "build:es": "npm run clean:es && tsc -p ./tsconfig-esm.json",
     "build:lib": "npm run clean:lib && tsc -p ./tsconfig.json",
-    "build1": "npm run entry && npm run build:es && npm run build:lib",
+    "build:tsc": "npm run entry && npm run build:es && npm run build:lib",
     "test": "jest",
     "coverage": "jest --coverage",
-    "prerelease": "npm run entry && npm run test && npm run docs",
+    "prerelease": "npm run entry && npm run docs",
     "release": "npm run build && dsc publish -t",
     "lint": "eslint 'src/**/*.{js,ts}' --fix",
     "prepare": "husky install && echo 'export PATH=\"/usr/local/bin/:$PATH\"' > ~/.huskyrc"
