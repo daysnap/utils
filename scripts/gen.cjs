@@ -1,5 +1,5 @@
 const { execSync } = require('child_process')
-const { rt, rc } = require('./utils')
+const { rt, rc } = require('./utils.cjs')
 
 module.exports = (plop) => {
   plop.setActionType('end', async () => {

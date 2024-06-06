@@ -1,5 +1,5 @@
 const path = require('path')
-const { requireFilePath, rc, rt } = require('./utils')
+const { requireFilePath, rc, rt } = require('./utils.cjs')
 // const { version } = require('../package.json')
 
 const modules = ((entry) => {

@@ -1,7 +1,7 @@
 const { execSync } = require('child_process')
 const fs = require('fs')
 const rimraf = require('rimraf')
-const { rc } = require('./utils')
+const { rc } = require('./utils.cjs')
 
 module.exports = (plop) => {
   plop.setGenerator('remove', {

@@ -1,29 +1,37 @@
 {
   "name": "@daysnap/utils",
   "type": "module",
-  "version": "0.0.96",
+  "version": "0.0.97",
   "description": "通用的工具库",
   "exports": {
     ".": {
-      "import": "./es/index.js",
-      "require": "./lib/index.cjs"
+      "import": {
+        "types": "./es/index.d.ts",
+        "default": "./es/index.js"
+      },
+      "require": {
+        "types": "./lib/index.d.cts",
+        "default": "./lib/index.cjs"
+      }
     },
     "./*": "./*"
   },
   "main": "lib/index.cjs",
   "module": "es/index.js",
-  "types": "es/index.d.js",
+  "types": "es/index.d.ts",
   "typesVersions": {
     "*": {
       "*": [
-        "./es/*"
+        "./lib/*",
+        "./es/*",
+        "./*"
       ]
     }
   },
   "scripts": {
-    "gen": "plop --plopfile ./scripts/gen.js --force",
-    "del": "plop --plopfile ./scripts/del.js --force",
-    "entry": "plop --plopfile ./scripts/entry.js --force",
+    "gen": "plop --plopfile ./scripts/gen.cjs --force",
+    "del": "plop --plopfile ./scripts/del.cjs --force",
+    "entry": "plop --plopfile ./scripts/entry.cjs --force",
     "docs": "typedoc --plugin typedoc-plugin-markdown --out docs src/index.ts",
     "clean:es": "rimraf ./es",
     "clean:lib": "rimraf ./lib",

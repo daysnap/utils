@@ -37,3 +37,29 @@ import { debounce } from '@daysnap/utils'
 ## 详情 API 文档
 
 [点我查看](./docs/modules.md)
+
+## 注意事项
+
+```json
+{
+  "exports": {
+     ".": {
+      "import": "./es/index.js",
+      "require": "./lib/index.cjs"
+    },
+    "./*": "./*"
+  },
+  "main": "lib/index.cjs",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./lib/*",
+        "./es/*",
+        "./*"
+      ]
+    }
+  },
+}
+```
