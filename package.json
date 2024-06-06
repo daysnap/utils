@@ -1,18 +1,18 @@
 {
   "name": "@daysnap/utils",
-  "version": "0.0.95",
+  "type": "module",
+  "version": "0.0.96",
   "description": "通用的工具库",
-  "main": "lib/index.js",
-  "module": "es/index.mjs",
-  "types": "es/index.d.mts",
   "exports": {
     ".": {
-      "types": "./es/index.d.mts",
-      "import": "./es/index.mts",
-      "require": "./lib/index.js"
+      "import": "./es/index.js",
+      "require": "./lib/index.cjs"
     },
     "./*": "./*"
   },
+  "main": "lib/index.cjs",
+  "module": "es/index.js",
+  "types": "es/index.d.js",
   "typesVersions": {
     "*": {
       "*": [
