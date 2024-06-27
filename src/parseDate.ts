@@ -1,5 +1,6 @@
 /**
  * 解析成Date
+ * @deprecated 请使用 normalizeDate() 方法
  */
 export function parseDate(v: string | Date | number): Date {
   if (typeof v === 'string') {

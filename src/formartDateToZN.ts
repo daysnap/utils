@@ -1,7 +1,8 @@
-import { formatDateStr, formatDate, isNumber } from './index'
+import { formatDate } from "./formatDate"
+import { normalizeDate } from "./normalizeDate"
 
-export function formatDateToZN(v: string | number): string {
-  const timestamp = isNumber(v) ? v : new Date(formatDateStr(v + '')).getTime()
+export function formatDateToZN(v: string | number | Date): string {
+  const timestamp = normalizeDate(v).getTime()
   const now = Date.now() // 获取当前时间的时间戳
   const diff = now - timestamp // 计算时间差
 

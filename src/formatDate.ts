@@ -1,5 +1,4 @@
-import { isString } from './isString'
-import { formatDateStr } from './formatDateStr'
+import { normalizeDate } from './normalizeDate'
 
 /**
  * 格式化日期
@@ -9,12 +8,7 @@ export function formatDate(
   val: string | Date | number = new Date(),
   fmt = 'yyyy-MM-dd hh:mm:ss',
 ) {
-  let v = val
-  if (isString(v)) {
-    // fix iOS new Date() 不支持 2020-01-01 格式，需转换为 2020/01/01
-    v = formatDateStr(v)
-  }
-  const date = new Date(v)
+  const date = normalizeDate(val)
   const o: any = {
     'M+': date.getMonth() + 1,
     'd+': date.getDate(),
