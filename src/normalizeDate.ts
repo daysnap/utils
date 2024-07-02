@@ -1,4 +1,4 @@
-import { isString } from "./isString";
+import { isString } from './isString'
 
 /**
  * 格式化日期
