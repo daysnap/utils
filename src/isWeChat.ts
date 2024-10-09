@@ -7,7 +7,7 @@ export function isWeChat() {
 
 /**
  * 判断是否是微信浏览器
- * @deprecated 请使用 isWeChat 方法
+ * @deprecated 请使用 @see {@link isWeChat}.
  */
 export function isWeixin() {
   return isWeChat()
