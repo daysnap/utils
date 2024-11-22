@@ -1,10 +1,7 @@
-import { getImageInfo } from './getImageInfo'
-
 /**
  * 利用 canvas 压缩图片
  */
-export async function compressImage(src: string, mw: number) {
-  const image = await getImageInfo(src)
+export async function compressImage(image: HTMLImageElement, mw: number) {
   let { width, height } = image
   const scale = width / height
 
