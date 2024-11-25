@@ -1,5 +1,5 @@
-import { formatDate } from "./formatDate"
-import { normalizeDate } from "./normalizeDate"
+import { formatDate } from './formatDate'
+import { normalizeDate } from './normalizeDate'
 
 export function formatDateToZN(v: string | number | Date): string {
   const timestamp = normalizeDate(v).getTime()
