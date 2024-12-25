@@ -3,7 +3,7 @@
  * @param val 需要四舍五入的值
  * @param fractionDigits 需要保留的小数点位数
  */
-export function round(val: number, fractionDigits: number) {
+export function round(val: number, fractionDigits: number): string {
   const number = val
   if (number >= 10 ** 21) {
     return number.toString()
