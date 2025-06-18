@@ -1,6 +1,7 @@
 import { factory } from './factory'
 
 export * from './factory'
+export * from './storage'
 
 type FactoryReturn = ReturnType<typeof factory>
 
