@@ -17,12 +17,18 @@ export class Storage<T = any> {
     this.storage = storage
   }
 
+  /**
+   * 设置值
+   */
   setItem(val: T) {
     this.value = null
     this.storage.setItem(this.key, JSON.stringify(val))
     return val
   }
 
+  /**
+   * 获取值
+   */
   getItem(): T | null
   getItem(defaultVal: Partial<T>): T
   getItem(defaultVal?: any): any {
@@ -33,11 +39,17 @@ export class Storage<T = any> {
     return JSON.parse(val)
   }
 
+  /**
+   * 删除值
+   */
   removeItem() {
     this.value = null
     this.storage.removeItem(this.key)
   }
 
+  /**
+   * 更新值
+   */
   updateItem(val: Partial<T>) {
     this.value = null
 
@@ -51,8 +63,27 @@ export class Storage<T = any> {
     return this.setItem(val as T)
   }
 
+  /**
+   * 获取值后，删除存储的值
+   */
+  getItemOnce(): T | null
+  getItemOnce(defaultVal: Partial<T>): T
+  getItemOnce(defaultVal?: any): any {
+    const val = this.storage.getItem(this.key)
+    if (val === null) {
+      return defaultVal ?? null
+    }
+
+    this.removeItem()
+
+    return JSON.parse(val)
+  }
+
+  /**
+   * 优先从缓存中获取值
+   */
   getItemWithCache(): T | null
-  getItemWithCache(defaultVal: T): T
+  getItemWithCache(defaultVal: Partial<T>): T
   getItemWithCache(defaultVal?: any): any {
     return this.value ?? (this.value = this.getItem(defaultVal))
   }
