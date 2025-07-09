@@ -6,8 +6,12 @@ import { isString } from './isString'
  * 2020/12/12 12:12:12 这种就是通用的
  */
 export function normalizeDate(value: string | number | Date) {
-  if (isString(value)) {
+  if (isString(value) && !value.endsWith('Z')) {
     value = value.replace(/-/g, '/')
+    const arr = value.split('/')
+    if (arr.length < 3) {
+      value = `${value}/01`
+    }
   }
   return new Date(value)
 }

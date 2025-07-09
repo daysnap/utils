@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[trap.ts:12](https://github.com/daysnap/utils/blob/72518b4/src/trap.ts#L12)
+[trap.ts:12](https://github.com/daysnap/utils/blob/c036886/src/trap.ts#L12)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[trap.ts:10](https://github.com/daysnap/utils/blob/72518b4/src/trap.ts#L10)
+[trap.ts:10](https://github.com/daysnap/utils/blob/c036886/src/trap.ts#L10)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[trap.ts:11](https://github.com/daysnap/utils/blob/72518b4/src/trap.ts#L11)
+[trap.ts:11](https://github.com/daysnap/utils/blob/c036886/src/trap.ts#L11)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[trap.ts:8](https://github.com/daysnap/utils/blob/72518b4/src/trap.ts#L8)
+[trap.ts:8](https://github.com/daysnap/utils/blob/c036886/src/trap.ts#L8)
 
 ___
 
@@ -115,4 +115,4 @@ ___
 
 #### Defined in
 
-[trap.ts:9](https://github.com/daysnap/utils/blob/72518b4/src/trap.ts#L9)
+[trap.ts:9](https://github.com/daysnap/utils/blob/c036886/src/trap.ts#L9)
