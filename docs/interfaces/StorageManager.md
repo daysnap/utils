@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[storage/factory.ts:6](https://github.com/daysnap/utils/blob/c036886/src/storage/factory.ts#L6)
+[storage/factory.ts:6](https://github.com/daysnap/utils/blob/59e0309/src/storage/factory.ts#L6)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 #### Defined in
 
-[storage/factory.ts:7](https://github.com/daysnap/utils/blob/c036886/src/storage/factory.ts#L7)
+[storage/factory.ts:7](https://github.com/daysnap/utils/blob/59e0309/src/storage/factory.ts#L7)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[storage/factory.ts:5](https://github.com/daysnap/utils/blob/c036886/src/storage/factory.ts#L5)
+[storage/factory.ts:5](https://github.com/daysnap/utils/blob/59e0309/src/storage/factory.ts#L5)
 
 ___
 
@@ -89,4 +89,4 @@ ___
 
 #### Defined in
 
-[storage/factory.ts:8](https://github.com/daysnap/utils/blob/c036886/src/storage/factory.ts#L8)
+[storage/factory.ts:8](https://github.com/daysnap/utils/blob/59e0309/src/storage/factory.ts#L8)
