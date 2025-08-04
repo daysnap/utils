@@ -40,7 +40,7 @@
 
 #### Defined in
 
-poller.ts:23
+[poller.ts:23](https://github.com/daysnap/utils/blob/575dd13/src/poller.ts#L23)
 
 ## Properties
 
@@ -50,7 +50,7 @@ poller.ts:23
 
 #### Defined in
 
-poller.ts:14
+[poller.ts:14](https://github.com/daysnap/utils/blob/575dd13/src/poller.ts#L14)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-poller.ts:17
+[poller.ts:17](https://github.com/daysnap/utils/blob/575dd13/src/poller.ts#L17)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-poller.ts:16
+[poller.ts:16](https://github.com/daysnap/utils/blob/575dd13/src/poller.ts#L16)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-poller.ts:15
+[poller.ts:15](https://github.com/daysnap/utils/blob/575dd13/src/poller.ts#L15)
 
 ## Accessors
 
@@ -94,7 +94,7 @@ poller.ts:15
 
 #### Defined in
 
-poller.ts:19
+[poller.ts:19](https://github.com/daysnap/utils/blob/575dd13/src/poller.ts#L19)
 
 ## Methods
 
@@ -114,7 +114,7 @@ poller.ts:19
 
 #### Defined in
 
-poller.ts:28
+[poller.ts:28](https://github.com/daysnap/utils/blob/575dd13/src/poller.ts#L28)
 
 ___
 
@@ -134,7 +134,7 @@ ___
 
 #### Defined in
 
-poller.ts:46
+[poller.ts:46](https://github.com/daysnap/utils/blob/575dd13/src/poller.ts#L46)
 
 ___
 
@@ -148,4 +148,4 @@ ___
 
 #### Defined in
 
-poller.ts:41
+[poller.ts:41](https://github.com/daysnap/utils/blob/575dd13/src/poller.ts#L41)

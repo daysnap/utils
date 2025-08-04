@@ -2,7 +2,7 @@ import { formatDate } from './formatDate'
 import { normalizeDate } from './normalizeDate'
 
 /**
- * 获取当前月份的开始时间和结束时间
+ * 获取月份的开始时间和结束时间
  */
 export function getMonthBounds(value: string | number | Date): [Date, Date]
 export function getMonthBounds(
