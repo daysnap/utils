@@ -50,7 +50,7 @@
 
 #### Defined in
 
-[storage/storage.ts:15](https://github.com/daysnap/utils/blob/585cbee/src/storage/storage.ts#L15)
+[storage/storage.ts:15](https://github.com/daysnap/utils/blob/bdaccfb/src/storage/storage.ts#L15)
 
 ## Properties
 
@@ -60,7 +60,7 @@
 
 #### Defined in
 
-[storage/storage.ts:11](https://github.com/daysnap/utils/blob/585cbee/src/storage/storage.ts#L11)
+[storage/storage.ts:11](https://github.com/daysnap/utils/blob/bdaccfb/src/storage/storage.ts#L11)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:12](https://github.com/daysnap/utils/blob/585cbee/src/storage/storage.ts#L12)
+[storage/storage.ts:12](https://github.com/daysnap/utils/blob/bdaccfb/src/storage/storage.ts#L12)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:13](https://github.com/daysnap/utils/blob/585cbee/src/storage/storage.ts#L13)
+[storage/storage.ts:13](https://github.com/daysnap/utils/blob/bdaccfb/src/storage/storage.ts#L13)
 
 ## Methods
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:32](https://github.com/daysnap/utils/blob/585cbee/src/storage/storage.ts#L32)
+[storage/storage.ts:32](https://github.com/daysnap/utils/blob/bdaccfb/src/storage/storage.ts#L32)
 
 ▸ **getItem**(`defaultVal`): `T`
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:33](https://github.com/daysnap/utils/blob/585cbee/src/storage/storage.ts#L33)
+[storage/storage.ts:33](https://github.com/daysnap/utils/blob/bdaccfb/src/storage/storage.ts#L33)
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:69](https://github.com/daysnap/utils/blob/585cbee/src/storage/storage.ts#L69)
+[storage/storage.ts:69](https://github.com/daysnap/utils/blob/bdaccfb/src/storage/storage.ts#L69)
 
 ▸ **getItemOnce**(`defaultVal`): `T`
 
@@ -144,7 +144,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:70](https://github.com/daysnap/utils/blob/585cbee/src/storage/storage.ts#L70)
+[storage/storage.ts:70](https://github.com/daysnap/utils/blob/bdaccfb/src/storage/storage.ts#L70)
 
 ___
 
@@ -160,7 +160,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:85](https://github.com/daysnap/utils/blob/585cbee/src/storage/storage.ts#L85)
+[storage/storage.ts:85](https://github.com/daysnap/utils/blob/bdaccfb/src/storage/storage.ts#L85)
 
 ▸ **getItemWithCache**(`defaultVal`): `T`
 
@@ -176,7 +176,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:86](https://github.com/daysnap/utils/blob/585cbee/src/storage/storage.ts#L86)
+[storage/storage.ts:86](https://github.com/daysnap/utils/blob/bdaccfb/src/storage/storage.ts#L86)
 
 ___
 
@@ -192,7 +192,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:45](https://github.com/daysnap/utils/blob/585cbee/src/storage/storage.ts#L45)
+[storage/storage.ts:45](https://github.com/daysnap/utils/blob/bdaccfb/src/storage/storage.ts#L45)
 
 ___
 
@@ -214,7 +214,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:23](https://github.com/daysnap/utils/blob/585cbee/src/storage/storage.ts#L23)
+[storage/storage.ts:23](https://github.com/daysnap/utils/blob/bdaccfb/src/storage/storage.ts#L23)
 
 ___
 
@@ -236,4 +236,4 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:53](https://github.com/daysnap/utils/blob/585cbee/src/storage/storage.ts#L53)
+[storage/storage.ts:53](https://github.com/daysnap/utils/blob/bdaccfb/src/storage/storage.ts#L53)
