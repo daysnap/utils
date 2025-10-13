@@ -4,9 +4,9 @@
 
 ## Type parameters
 
-| Name | Type  |
-| :--- | :---- |
-| `T`  | `any` |
+| Name | Type |
+| :------ | :------ |
+| `T` | `any` |
 
 ## Table of contents
 
@@ -25,8 +25,8 @@
 
 #### Parameters
 
-| Name          | Type            |
-| :------------ | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `defaultVal?` | `Partial`<`T`\> |
 
 #### Returns
@@ -35,9 +35,9 @@
 
 #### Defined in
 
-[storage/factory.ts:6](https://github.com/daysnap/utils/blob/59e0309/src/storage/factory.ts#L6)
+[storage/factory.ts:6](https://github.com/daysnap/utils/blob/90ba9f7/src/storage/factory.ts#L6)
 
----
+___
 
 ### removeItem
 
@@ -49,9 +49,9 @@
 
 #### Defined in
 
-[storage/factory.ts:7](https://github.com/daysnap/utils/blob/59e0309/src/storage/factory.ts#L7)
+[storage/factory.ts:7](https://github.com/daysnap/utils/blob/90ba9f7/src/storage/factory.ts#L7)
 
----
+___
 
 ### setItem
 
@@ -59,9 +59,9 @@
 
 #### Parameters
 
-| Name  | Type |
-| :---- | :--- |
-| `val` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `val` | `T` |
 
 #### Returns
 
@@ -69,9 +69,9 @@
 
 #### Defined in
 
-[storage/factory.ts:5](https://github.com/daysnap/utils/blob/59e0309/src/storage/factory.ts#L5)
+[storage/factory.ts:5](https://github.com/daysnap/utils/blob/90ba9f7/src/storage/factory.ts#L5)
 
----
+___
 
 ### updateItem
 
@@ -79,8 +79,8 @@
 
 #### Parameters
 
-| Name  | Type            |
-| :---- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `val` | `Partial`<`T`\> |
 
 #### Returns
@@ -89,4 +89,4 @@
 
 #### Defined in
 
-[storage/factory.ts:8](https://github.com/daysnap/utils/blob/59e0309/src/storage/factory.ts#L8)
+[storage/factory.ts:8](https://github.com/daysnap/utils/blob/90ba9f7/src/storage/factory.ts#L8)

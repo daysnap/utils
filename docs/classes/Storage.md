@@ -4,9 +4,9 @@
 
 ## Type parameters
 
-| Name | Type  |
-| :--- | :---- |
-| `T`  | `any` |
+| Name | Type |
+| :------ | :------ |
+| `T` | `any` |
 
 ## Table of contents
 
@@ -37,20 +37,20 @@
 
 #### Type parameters
 
-| Name | Type  |
-| :--- | :---- |
-| `T`  | `any` |
+| Name | Type |
+| :------ | :------ |
+| `T` | `any` |
 
 #### Parameters
 
-| Name      | Type          |
-| :-------- | :------------ |
-| `key`     | `string`      |
+| Name | Type |
+| :------ | :------ |
+| `key` | `string` |
 | `storage` | `StorageLike` |
 
 #### Defined in
 
-[storage/storage.ts:15](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L15)
+[storage/storage.ts:15](https://github.com/daysnap/utils/blob/90ba9f7/src/storage/storage.ts#L15)
 
 ## Properties
 
@@ -60,9 +60,9 @@
 
 #### Defined in
 
-[storage/storage.ts:11](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L11)
+[storage/storage.ts:11](https://github.com/daysnap/utils/blob/90ba9f7/src/storage/storage.ts#L11)
 
----
+___
 
 ### storage
 
@@ -70,40 +70,40 @@
 
 #### Defined in
 
-[storage/storage.ts:12](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L12)
+[storage/storage.ts:12](https://github.com/daysnap/utils/blob/90ba9f7/src/storage/storage.ts#L12)
 
----
+___
 
 ### value
 
-• `Private` **value**: `null` \| `T` = `null`
+• `Private` **value**: ``null`` \| `T` = `null`
 
 #### Defined in
 
-[storage/storage.ts:13](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L13)
+[storage/storage.ts:13](https://github.com/daysnap/utils/blob/90ba9f7/src/storage/storage.ts#L13)
 
 ## Methods
 
 ### getItem
 
-▸ **getItem**(): `null` \| `T`
+▸ **getItem**(): ``null`` \| `T`
 
 获取值
 
 #### Returns
 
-`null` \| `T`
+``null`` \| `T`
 
 #### Defined in
 
-[storage/storage.ts:32](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L32)
+[storage/storage.ts:32](https://github.com/daysnap/utils/blob/90ba9f7/src/storage/storage.ts#L32)
 
 ▸ **getItem**(`defaultVal`): `T`
 
 #### Parameters
 
-| Name         | Type            |
-| :----------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `defaultVal` | `Partial`<`T`\> |
 
 #### Returns
@@ -112,30 +112,30 @@
 
 #### Defined in
 
-[storage/storage.ts:33](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L33)
+[storage/storage.ts:33](https://github.com/daysnap/utils/blob/90ba9f7/src/storage/storage.ts#L33)
 
----
+___
 
 ### getItemOnce
 
-▸ **getItemOnce**(): `null` \| `T`
+▸ **getItemOnce**(): ``null`` \| `T`
 
 获取值后，删除存储的值
 
 #### Returns
 
-`null` \| `T`
+``null`` \| `T`
 
 #### Defined in
 
-[storage/storage.ts:69](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L69)
+[storage/storage.ts:69](https://github.com/daysnap/utils/blob/90ba9f7/src/storage/storage.ts#L69)
 
 ▸ **getItemOnce**(`defaultVal`): `T`
 
 #### Parameters
 
-| Name         | Type            |
-| :----------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `defaultVal` | `Partial`<`T`\> |
 
 #### Returns
@@ -144,30 +144,30 @@
 
 #### Defined in
 
-[storage/storage.ts:70](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L70)
+[storage/storage.ts:70](https://github.com/daysnap/utils/blob/90ba9f7/src/storage/storage.ts#L70)
 
----
+___
 
 ### getItemWithCache
 
-▸ **getItemWithCache**(): `null` \| `T`
+▸ **getItemWithCache**(): ``null`` \| `T`
 
 优先从缓存中获取值
 
 #### Returns
 
-`null` \| `T`
+``null`` \| `T`
 
 #### Defined in
 
-[storage/storage.ts:85](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L85)
+[storage/storage.ts:85](https://github.com/daysnap/utils/blob/90ba9f7/src/storage/storage.ts#L85)
 
 ▸ **getItemWithCache**(`defaultVal`): `T`
 
 #### Parameters
 
-| Name         | Type            |
-| :----------- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `defaultVal` | `Partial`<`T`\> |
 
 #### Returns
@@ -176,9 +176,9 @@
 
 #### Defined in
 
-[storage/storage.ts:86](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L86)
+[storage/storage.ts:86](https://github.com/daysnap/utils/blob/90ba9f7/src/storage/storage.ts#L86)
 
----
+___
 
 ### removeItem
 
@@ -192,9 +192,9 @@
 
 #### Defined in
 
-[storage/storage.ts:45](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L45)
+[storage/storage.ts:45](https://github.com/daysnap/utils/blob/90ba9f7/src/storage/storage.ts#L45)
 
----
+___
 
 ### setItem
 
@@ -204,9 +204,9 @@
 
 #### Parameters
 
-| Name  | Type |
-| :---- | :--- |
-| `val` | `T`  |
+| Name | Type |
+| :------ | :------ |
+| `val` | `T` |
 
 #### Returns
 
@@ -214,9 +214,9 @@
 
 #### Defined in
 
-[storage/storage.ts:23](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L23)
+[storage/storage.ts:23](https://github.com/daysnap/utils/blob/90ba9f7/src/storage/storage.ts#L23)
 
----
+___
 
 ### updateItem
 
@@ -226,8 +226,8 @@
 
 #### Parameters
 
-| Name  | Type            |
-| :---- | :-------------- |
+| Name | Type |
+| :------ | :------ |
 | `val` | `Partial`<`T`\> |
 
 #### Returns
@@ -236,4 +236,4 @@
 
 #### Defined in
 
-[storage/storage.ts:53](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L53)
+[storage/storage.ts:53](https://github.com/daysnap/utils/blob/90ba9f7/src/storage/storage.ts#L53)

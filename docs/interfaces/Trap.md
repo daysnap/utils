@@ -2,7 +2,8 @@
 
 # Interface: Trap
 
-陷阱圈套主要用于缓存页面下、执行触发
+陷阱圈套
+主要用于缓存页面下、执行触发
 
 ## Table of contents
 
@@ -30,9 +31,9 @@
 
 #### Defined in
 
-[trap.ts:12](https://github.com/daysnap/utils/blob/59e0309/src/trap.ts#L12)
+[trap.ts:12](https://github.com/daysnap/utils/blob/90ba9f7/src/trap.ts#L12)
 
----
+___
 
 ### create
 
@@ -44,9 +45,9 @@
 
 ##### Parameters
 
-| Name | Type                          |
-| :--- | :---------------------------- |
-| `id` | `string`                      |
+| Name | Type |
+| :------ | :------ |
+| `id` | `string` |
 | `cb` | (...`args`: `any`[]) => `any` |
 
 ##### Returns
@@ -55,9 +56,9 @@
 
 #### Defined in
 
-[trap.ts:10](https://github.com/daysnap/utils/blob/59e0309/src/trap.ts#L10)
+[trap.ts:10](https://github.com/daysnap/utils/blob/90ba9f7/src/trap.ts#L10)
 
----
+___
 
 ### delete
 
@@ -69,8 +70,8 @@
 
 ##### Parameters
 
-| Name | Type     |
-| :--- | :------- |
+| Name | Type |
+| :------ | :------ |
 | `id` | `string` |
 
 ##### Returns
@@ -79,9 +80,9 @@
 
 #### Defined in
 
-[trap.ts:11](https://github.com/daysnap/utils/blob/59e0309/src/trap.ts#L11)
+[trap.ts:11](https://github.com/daysnap/utils/blob/90ba9f7/src/trap.ts#L11)
 
----
+___
 
 ### list
 
@@ -89,9 +90,9 @@
 
 #### Defined in
 
-[trap.ts:8](https://github.com/daysnap/utils/blob/59e0309/src/trap.ts#L8)
+[trap.ts:8](https://github.com/daysnap/utils/blob/90ba9f7/src/trap.ts#L8)
 
----
+___
 
 ### trigger
 
@@ -103,10 +104,10 @@
 
 ##### Parameters
 
-| Name    | Type     |
-| :------ | :------- |
-| `id`    | `string` |
-| `data?` | `any`    |
+| Name | Type |
+| :------ | :------ |
+| `id` | `string` |
+| `data?` | `any` |
 
 ##### Returns
 
@@ -114,4 +115,4 @@
 
 #### Defined in
 
-[trap.ts:9](https://github.com/daysnap/utils/blob/59e0309/src/trap.ts#L9)
+[trap.ts:9](https://github.com/daysnap/utils/blob/90ba9f7/src/trap.ts#L9)
