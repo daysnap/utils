@@ -4,9 +4,9 @@
 
 ## Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | `any` |
+| Name | Type  |
+| :--- | :---- |
+| `T`  | `any` |
 
 ## Table of contents
 
@@ -37,15 +37,15 @@
 
 #### Type parameters
 
-| Name | Type |
-| :------ | :------ |
-| `T` | `any` |
+| Name | Type  |
+| :--- | :---- |
+| `T`  | `any` |
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `key` | `string` |
+| Name      | Type          |
+| :-------- | :------------ |
+| `key`     | `string`      |
 | `storage` | `StorageLike` |
 
 #### Defined in
@@ -62,7 +62,7 @@
 
 [storage/storage.ts:11](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L11)
 
-___
+---
 
 ### storage
 
@@ -72,11 +72,11 @@ ___
 
 [storage/storage.ts:12](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L12)
 
-___
+---
 
 ### value
 
-• `Private` **value**: ``null`` \| `T` = `null`
+• `Private` **value**: `null` \| `T` = `null`
 
 #### Defined in
 
@@ -86,13 +86,13 @@ ___
 
 ### getItem
 
-▸ **getItem**(): ``null`` \| `T`
+▸ **getItem**(): `null` \| `T`
 
 获取值
 
 #### Returns
 
-``null`` \| `T`
+`null` \| `T`
 
 #### Defined in
 
@@ -102,8 +102,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type            |
+| :----------- | :-------------- |
 | `defaultVal` | `Partial`<`T`\> |
 
 #### Returns
@@ -114,17 +114,17 @@ ___
 
 [storage/storage.ts:33](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L33)
 
-___
+---
 
 ### getItemOnce
 
-▸ **getItemOnce**(): ``null`` \| `T`
+▸ **getItemOnce**(): `null` \| `T`
 
 获取值后，删除存储的值
 
 #### Returns
 
-``null`` \| `T`
+`null` \| `T`
 
 #### Defined in
 
@@ -134,8 +134,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type            |
+| :----------- | :-------------- |
 | `defaultVal` | `Partial`<`T`\> |
 
 #### Returns
@@ -146,17 +146,17 @@ ___
 
 [storage/storage.ts:70](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L70)
 
-___
+---
 
 ### getItemWithCache
 
-▸ **getItemWithCache**(): ``null`` \| `T`
+▸ **getItemWithCache**(): `null` \| `T`
 
 优先从缓存中获取值
 
 #### Returns
 
-``null`` \| `T`
+`null` \| `T`
 
 #### Defined in
 
@@ -166,8 +166,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name         | Type            |
+| :----------- | :-------------- |
 | `defaultVal` | `Partial`<`T`\> |
 
 #### Returns
@@ -178,7 +178,7 @@ ___
 
 [storage/storage.ts:86](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L86)
 
-___
+---
 
 ### removeItem
 
@@ -194,7 +194,7 @@ ___
 
 [storage/storage.ts:45](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L45)
 
-___
+---
 
 ### setItem
 
@@ -204,9 +204,9 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `val` | `T` |
+| Name  | Type |
+| :---- | :--- |
+| `val` | `T`  |
 
 #### Returns
 
@@ -216,7 +216,7 @@ ___
 
 [storage/storage.ts:23](https://github.com/daysnap/utils/blob/59e0309/src/storage/storage.ts#L23)
 
-___
+---
 
 ### updateItem
 
@@ -226,8 +226,8 @@ ___
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
+| Name  | Type            |
+| :---- | :-------------- |
 | `val` | `Partial`<`T`\> |
 
 #### Returns

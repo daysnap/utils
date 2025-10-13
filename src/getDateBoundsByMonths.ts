@@ -3,7 +3,7 @@ import { formatDate } from './formatDate'
 import { normalizeDate } from './normalizeDate'
 
 /**
- * 说明
+ * 获取月份开始时间、结束时间
  */
 export function getDateBoundsByMonths(
   monthsCount: number,
