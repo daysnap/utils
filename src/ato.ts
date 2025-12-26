@@ -10,19 +10,19 @@
  * res = { '1': '男', '2': '女' }
  */
 export function ato<T extends Record<string, any>, K extends keyof T>(
-  options: T[],
+  options: readonly T[],
   labelKey: K,
 ): Record<T[K], T>
-export function ato<T extends Record<string, any>, K extends keyof T>(
-  options: T[],
-  labelKey: K,
-  valueKey: K,
-): Record<T[K], any>
-export function ato<T extends Record<string, any>, K extends keyof T>(
-  options: T[],
-  labelKey: K,
-  valueKey?: K,
-) {
+export function ato<
+  T extends Record<string, any>,
+  K extends keyof T,
+  V extends keyof T,
+>(options: readonly T[], labelKey: K, valueKey: V): Record<T[K], T[V]>
+export function ato<
+  T extends Record<string, any>,
+  K extends keyof T,
+  V extends keyof T,
+>(options: readonly T[], labelKey: K, valueKey?: V) {
   return options.reduce<Record<string, any>>((res, item) => {
     res[item[labelKey]] = valueKey ? item[valueKey] : item
     return res
