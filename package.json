@@ -1,7 +1,7 @@
 {
   "name": "@daysnap/utils",
   "type": "module",
-  "version": "0.1.23",
+  "version": "0.1.24",
   "description": "通用的工具库",
   "exports": {
     ".": {
