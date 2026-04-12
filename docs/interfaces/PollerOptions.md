@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[poller.ts:10](https://github.com/daysnap/utils/blob/7795a24/src/poller.ts#L10)
+[poller.ts:10](https://github.com/daysnap/utils/blob/4b6486e/src/poller.ts#L10)

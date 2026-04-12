@@ -20,4 +20,4 @@
 
 #### Defined in
 
-[eventBus.ts:2](https://github.com/daysnap/utils/blob/7795a24/src/eventBus.ts#L2)
+[eventBus.ts:2](https://github.com/daysnap/utils/blob/4b6486e/src/eventBus.ts#L2)
