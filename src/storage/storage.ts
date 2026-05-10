@@ -7,22 +7,55 @@ interface StorageLike {
   removeItem: (key: string) => void
 }
 
+type DefaultVal<T> = T extends Record<string, any> ? Partial<T> : T
+
+interface StorageOptions<T = any> {
+  initialValue?: T
+  debug: boolean
+  cached: boolean
+}
+
 export class Storage<T = any> {
   private readonly key: string
   private readonly storage: StorageLike
   private value: T | null = null
+  private options: StorageOptions<T> = { debug: false, cached: false }
 
-  constructor(key: string, storage: StorageLike) {
+  constructor(
+    key: string,
+    storage: StorageLike,
+    options?: Partial<StorageOptions<T>>,
+  ) {
+    const { initialValue, ...rest } = options || {}
+
     this.key = key
     this.storage = storage
+
+    if (options) {
+      Object.assign(this.options, rest)
+    }
+
+    if (initialValue != undefined) {
+      this.setItem(initialValue)
+    }
+  }
+
+  _debug(...args: string[]) {
+    if (this.options.debug) {
+      console.log(`【Storage】=> `, ...args)
+    }
   }
 
   /**
    * 设置值
    */
   setItem(val: T) {
-    this.value = null
     this.storage.setItem(this.key, JSON.stringify(val))
+
+    if (this.options.cached) {
+      this.value = this.getItem()
+    }
+
     return val
   }
 
@@ -30,9 +63,9 @@ export class Storage<T = any> {
    * 获取值
    */
   getItem(): T | null
-  getItem(defaultVal: Partial<T>): T
+  getItem(defaultVal: DefaultVal<T>): T
   getItem(defaultVal?: any): any {
-    const val = this.storage.getItem(this.key)
+    const val = this.storage.getItem(this.key) ?? null
     if (val === null) {
       return defaultVal ?? null
     }
@@ -50,7 +83,7 @@ export class Storage<T = any> {
   /**
    * 更新值
    */
-  updateItem(val: Partial<T>) {
+  updateItem(val: DefaultVal<T>) {
     this.value = null
 
     const oldVal = this.getItem()
@@ -67,24 +100,41 @@ export class Storage<T = any> {
    * 获取值后，删除存储的值
    */
   getItemOnce(): T | null
-  getItemOnce(defaultVal: Partial<T>): T
+  getItemOnce(defaultVal: DefaultVal<T>): T
   getItemOnce(defaultVal?: any): any {
-    const val = this.storage.getItem(this.key)
-    if (val === null) {
-      return defaultVal ?? null
-    }
+    const val = this.getItem(defaultVal)
 
     this.removeItem()
 
-    return JSON.parse(val)
+    return val
   }
 
   /**
    * 优先从缓存中获取值
    */
   getItemWithCache(): T | null
-  getItemWithCache(defaultVal: Partial<T>): T
+  getItemWithCache(defaultVal: DefaultVal<T>): T
   getItemWithCache(defaultVal?: any): any {
-    return this.value ?? (this.value = this.getItem(defaultVal))
+    if (this.value !== null) {
+      this._debug(`${this.key}: 命中缓存！`)
+      return this.value
+    }
+
+    this._debug(`${this.key}: 读取存储！`)
+    const val = this.getItem()
+    if (val === null) {
+      return defaultVal ?? null
+    }
+
+    this.value = val
+
+    return this.value
+  }
+
+  /**
+   * 清除缓存
+   */
+  clearCache() {
+    this.value = null
   }
 }

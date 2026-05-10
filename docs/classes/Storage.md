@@ -17,11 +17,14 @@
 ### Properties
 
 - [key](Storage.md#key)
+- [options](Storage.md#options)
 - [storage](Storage.md#storage)
 - [value](Storage.md#value)
 
 ### Methods
 
+- [\_debug](Storage.md#_debug)
+- [clearCache](Storage.md#clearcache)
 - [getItem](Storage.md#getitem)
 - [getItemOnce](Storage.md#getitemonce)
 - [getItemWithCache](Storage.md#getitemwithcache)
@@ -33,7 +36,7 @@
 
 ### constructor
 
-• **new Storage**<`T`\>(`key`, `storage`)
+• **new Storage**<`T`\>(`key`, `storage`, `options?`)
 
 #### Type parameters
 
@@ -47,10 +50,11 @@
 | :------ | :------ |
 | `key` | `string` |
 | `storage` | `StorageLike` |
+| `options?` | `Partial`<`StorageOptions`<`T`\>\> |
 
 #### Defined in
 
-[storage/storage.ts:15](https://github.com/daysnap/utils/blob/e7ac628/src/storage/storage.ts#L15)
+[storage/storage.ts:24](https://github.com/daysnap/utils/blob/3629084/src/storage/storage.ts#L24)
 
 ## Properties
 
@@ -60,7 +64,17 @@
 
 #### Defined in
 
-[storage/storage.ts:11](https://github.com/daysnap/utils/blob/e7ac628/src/storage/storage.ts#L11)
+[storage/storage.ts:19](https://github.com/daysnap/utils/blob/3629084/src/storage/storage.ts#L19)
+
+___
+
+### options
+
+• `Private` **options**: `StorageOptions`<`T`\>
+
+#### Defined in
+
+[storage/storage.ts:22](https://github.com/daysnap/utils/blob/3629084/src/storage/storage.ts#L22)
 
 ___
 
@@ -70,7 +84,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:12](https://github.com/daysnap/utils/blob/e7ac628/src/storage/storage.ts#L12)
+[storage/storage.ts:20](https://github.com/daysnap/utils/blob/3629084/src/storage/storage.ts#L20)
 
 ___
 
@@ -80,9 +94,45 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:13](https://github.com/daysnap/utils/blob/e7ac628/src/storage/storage.ts#L13)
+[storage/storage.ts:21](https://github.com/daysnap/utils/blob/3629084/src/storage/storage.ts#L21)
 
 ## Methods
+
+### \_debug
+
+▸ **_debug**(`...args`): `void`
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `...args` | `string`[] |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[storage/storage.ts:43](https://github.com/daysnap/utils/blob/3629084/src/storage/storage.ts#L43)
+
+___
+
+### clearCache
+
+▸ **clearCache**(): `void`
+
+清除缓存
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[storage/storage.ts:137](https://github.com/daysnap/utils/blob/3629084/src/storage/storage.ts#L137)
+
+___
 
 ### getItem
 
@@ -96,7 +146,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:32](https://github.com/daysnap/utils/blob/e7ac628/src/storage/storage.ts#L32)
+[storage/storage.ts:65](https://github.com/daysnap/utils/blob/3629084/src/storage/storage.ts#L65)
 
 ▸ **getItem**(`defaultVal`): `T`
 
@@ -104,7 +154,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `defaultVal` | `Partial`<`T`\> |
+| `defaultVal` | `DefaultVal`<`T`\> |
 
 #### Returns
 
@@ -112,7 +162,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:33](https://github.com/daysnap/utils/blob/e7ac628/src/storage/storage.ts#L33)
+[storage/storage.ts:66](https://github.com/daysnap/utils/blob/3629084/src/storage/storage.ts#L66)
 
 ___
 
@@ -128,7 +178,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:69](https://github.com/daysnap/utils/blob/e7ac628/src/storage/storage.ts#L69)
+[storage/storage.ts:102](https://github.com/daysnap/utils/blob/3629084/src/storage/storage.ts#L102)
 
 ▸ **getItemOnce**(`defaultVal`): `T`
 
@@ -136,7 +186,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `defaultVal` | `Partial`<`T`\> |
+| `defaultVal` | `DefaultVal`<`T`\> |
 
 #### Returns
 
@@ -144,7 +194,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:70](https://github.com/daysnap/utils/blob/e7ac628/src/storage/storage.ts#L70)
+[storage/storage.ts:103](https://github.com/daysnap/utils/blob/3629084/src/storage/storage.ts#L103)
 
 ___
 
@@ -160,7 +210,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:85](https://github.com/daysnap/utils/blob/e7ac628/src/storage/storage.ts#L85)
+[storage/storage.ts:115](https://github.com/daysnap/utils/blob/3629084/src/storage/storage.ts#L115)
 
 ▸ **getItemWithCache**(`defaultVal`): `T`
 
@@ -168,7 +218,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `defaultVal` | `Partial`<`T`\> |
+| `defaultVal` | `DefaultVal`<`T`\> |
 
 #### Returns
 
@@ -176,7 +226,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:86](https://github.com/daysnap/utils/blob/e7ac628/src/storage/storage.ts#L86)
+[storage/storage.ts:116](https://github.com/daysnap/utils/blob/3629084/src/storage/storage.ts#L116)
 
 ___
 
@@ -192,7 +242,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:45](https://github.com/daysnap/utils/blob/e7ac628/src/storage/storage.ts#L45)
+[storage/storage.ts:78](https://github.com/daysnap/utils/blob/3629084/src/storage/storage.ts#L78)
 
 ___
 
@@ -214,7 +264,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:23](https://github.com/daysnap/utils/blob/e7ac628/src/storage/storage.ts#L23)
+[storage/storage.ts:52](https://github.com/daysnap/utils/blob/3629084/src/storage/storage.ts#L52)
 
 ___
 
@@ -228,7 +278,7 @@ ___
 
 | Name | Type |
 | :------ | :------ |
-| `val` | `Partial`<`T`\> |
+| `val` | `DefaultVal`<`T`\> |
 
 #### Returns
 
@@ -236,4 +286,4 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:53](https://github.com/daysnap/utils/blob/e7ac628/src/storage/storage.ts#L53)
+[storage/storage.ts:86](https://github.com/daysnap/utils/blob/3629084/src/storage/storage.ts#L86)
