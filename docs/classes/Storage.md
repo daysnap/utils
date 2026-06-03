@@ -54,7 +54,7 @@
 
 #### Defined in
 
-[storage/storage.ts:24](https://github.com/daysnap/utils/blob/2af7b5c/src/storage/storage.ts#L24)
+[storage/storage.ts:24](https://github.com/daysnap/utils/blob/b171b07/src/storage/storage.ts#L24)
 
 ## Properties
 
@@ -64,7 +64,7 @@
 
 #### Defined in
 
-[storage/storage.ts:19](https://github.com/daysnap/utils/blob/2af7b5c/src/storage/storage.ts#L19)
+[storage/storage.ts:19](https://github.com/daysnap/utils/blob/b171b07/src/storage/storage.ts#L19)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:22](https://github.com/daysnap/utils/blob/2af7b5c/src/storage/storage.ts#L22)
+[storage/storage.ts:22](https://github.com/daysnap/utils/blob/b171b07/src/storage/storage.ts#L22)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:20](https://github.com/daysnap/utils/blob/2af7b5c/src/storage/storage.ts#L20)
+[storage/storage.ts:20](https://github.com/daysnap/utils/blob/b171b07/src/storage/storage.ts#L20)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:21](https://github.com/daysnap/utils/blob/2af7b5c/src/storage/storage.ts#L21)
+[storage/storage.ts:21](https://github.com/daysnap/utils/blob/b171b07/src/storage/storage.ts#L21)
 
 ## Methods
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:43](https://github.com/daysnap/utils/blob/2af7b5c/src/storage/storage.ts#L43)
+[storage/storage.ts:43](https://github.com/daysnap/utils/blob/b171b07/src/storage/storage.ts#L43)
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:137](https://github.com/daysnap/utils/blob/2af7b5c/src/storage/storage.ts#L137)
+[storage/storage.ts:137](https://github.com/daysnap/utils/blob/b171b07/src/storage/storage.ts#L137)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:65](https://github.com/daysnap/utils/blob/2af7b5c/src/storage/storage.ts#L65)
+[storage/storage.ts:65](https://github.com/daysnap/utils/blob/b171b07/src/storage/storage.ts#L65)
 
 ▸ **getItem**(`defaultVal`): `T`
 
@@ -162,7 +162,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:66](https://github.com/daysnap/utils/blob/2af7b5c/src/storage/storage.ts#L66)
+[storage/storage.ts:66](https://github.com/daysnap/utils/blob/b171b07/src/storage/storage.ts#L66)
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:102](https://github.com/daysnap/utils/blob/2af7b5c/src/storage/storage.ts#L102)
+[storage/storage.ts:102](https://github.com/daysnap/utils/blob/b171b07/src/storage/storage.ts#L102)
 
 ▸ **getItemOnce**(`defaultVal`): `T`
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:103](https://github.com/daysnap/utils/blob/2af7b5c/src/storage/storage.ts#L103)
+[storage/storage.ts:103](https://github.com/daysnap/utils/blob/b171b07/src/storage/storage.ts#L103)
 
 ___
 
@@ -210,7 +210,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:115](https://github.com/daysnap/utils/blob/2af7b5c/src/storage/storage.ts#L115)
+[storage/storage.ts:115](https://github.com/daysnap/utils/blob/b171b07/src/storage/storage.ts#L115)
 
 ▸ **getItemWithCache**(`defaultVal`): `T`
 
@@ -226,7 +226,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:116](https://github.com/daysnap/utils/blob/2af7b5c/src/storage/storage.ts#L116)
+[storage/storage.ts:116](https://github.com/daysnap/utils/blob/b171b07/src/storage/storage.ts#L116)
 
 ___
 
@@ -242,7 +242,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:78](https://github.com/daysnap/utils/blob/2af7b5c/src/storage/storage.ts#L78)
+[storage/storage.ts:78](https://github.com/daysnap/utils/blob/b171b07/src/storage/storage.ts#L78)
 
 ___
 
@@ -264,7 +264,7 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:52](https://github.com/daysnap/utils/blob/2af7b5c/src/storage/storage.ts#L52)
+[storage/storage.ts:52](https://github.com/daysnap/utils/blob/b171b07/src/storage/storage.ts#L52)
 
 ___
 
@@ -286,4 +286,4 @@ ___
 
 #### Defined in
 
-[storage/storage.ts:86](https://github.com/daysnap/utils/blob/2af7b5c/src/storage/storage.ts#L86)
+[storage/storage.ts:86](https://github.com/daysnap/utils/blob/b171b07/src/storage/storage.ts#L86)
