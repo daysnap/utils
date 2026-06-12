@@ -34,4 +34,4 @@ error
 
 #### Defined in
 
-createWithToast.ts:8
+[createWithToast.ts:8](https://github.com/daysnap/utils/blob/eebc05a/src/createWithToast.ts#L8)
