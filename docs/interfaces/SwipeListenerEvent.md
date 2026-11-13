@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[createSwipeHandlers.ts:12](https://github.com/daysnap/utils/blob/9ced15e/src/createSwipeHandlers.ts#L12)
+[createSwipeHandlers.ts:12](https://github.com/daysnap/utils/blob/523ea73/src/createSwipeHandlers.ts#L12)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[createSwipeHandlers.ts:13](https://github.com/daysnap/utils/blob/9ced15e/src/createSwipeHandlers.ts#L13)
+[createSwipeHandlers.ts:13](https://github.com/daysnap/utils/blob/523ea73/src/createSwipeHandlers.ts#L13)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[createSwipeHandlers.ts:14](https://github.com/daysnap/utils/blob/9ced15e/src/createSwipeHandlers.ts#L14)
+[createSwipeHandlers.ts:14](https://github.com/daysnap/utils/blob/523ea73/src/createSwipeHandlers.ts#L14)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[createSwipeHandlers.ts:10](https://github.com/daysnap/utils/blob/9ced15e/src/createSwipeHandlers.ts#L10)
+[createSwipeHandlers.ts:10](https://github.com/daysnap/utils/blob/523ea73/src/createSwipeHandlers.ts#L10)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[createSwipeHandlers.ts:11](https://github.com/daysnap/utils/blob/9ced15e/src/createSwipeHandlers.ts#L11)
+[createSwipeHandlers.ts:11](https://github.com/daysnap/utils/blob/523ea73/src/createSwipeHandlers.ts#L11)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[createSwipeHandlers.ts:8](https://github.com/daysnap/utils/blob/9ced15e/src/createSwipeHandlers.ts#L8)
+[createSwipeHandlers.ts:8](https://github.com/daysnap/utils/blob/523ea73/src/createSwipeHandlers.ts#L8)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[createSwipeHandlers.ts:9](https://github.com/daysnap/utils/blob/9ced15e/src/createSwipeHandlers.ts#L9)
+[createSwipeHandlers.ts:9](https://github.com/daysnap/utils/blob/523ea73/src/createSwipeHandlers.ts#L9)
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 #### Defined in
 
-[createSwipeHandlers.ts:6](https://github.com/daysnap/utils/blob/9ced15e/src/createSwipeHandlers.ts#L6)
+[createSwipeHandlers.ts:6](https://github.com/daysnap/utils/blob/523ea73/src/createSwipeHandlers.ts#L6)
 
 ___
 
@@ -104,4 +104,4 @@ ___
 
 #### Defined in
 
-[createSwipeHandlers.ts:7](https://github.com/daysnap/utils/blob/9ced15e/src/createSwipeHandlers.ts#L7)
+[createSwipeHandlers.ts:7](https://github.com/daysnap/utils/blob/523ea73/src/createSwipeHandlers.ts#L7)

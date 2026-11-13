@@ -9,10 +9,12 @@ import { isObject } from './isObject'
  * @param obj 需要过滤的对象
  * @param expand 如果是传的是布尔类型 true， 则还会过滤空数组、空对象的情况
  */
-export function filterEmptyValue(
+export function filterEmptyValue<
+  T extends Record<string, any> = Record<string, any>,
+>(
   obj: Record<string, any>,
   expand: boolean | ((key: string, value: any) => boolean) = false,
-) {
+): T {
   return Object.entries(obj).reduce<Record<string, any>>(
     (res, [key, value]) => {
       if (isFunction(expand) && expand(key, value)) {
@@ -34,5 +36,5 @@ export function filterEmptyValue(
       return res
     },
     {},
-  )
+  ) as T
 }

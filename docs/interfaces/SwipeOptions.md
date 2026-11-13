@@ -16,4 +16,4 @@
 
 #### Defined in
 
-[createSwipeHandlers.ts:22](https://github.com/daysnap/utils/blob/9ced15e/src/createSwipeHandlers.ts#L22)
+[createSwipeHandlers.ts:22](https://github.com/daysnap/utils/blob/523ea73/src/createSwipeHandlers.ts#L22)
