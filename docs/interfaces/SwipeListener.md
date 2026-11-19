@@ -20,4 +20,4 @@
 
 #### Defined in
 
-[createSwipeHandlers.ts:18](https://github.com/daysnap/utils/blob/523ea73/src/createSwipeHandlers.ts#L18)
+[createSwipeHandlers.ts:18](https://github.com/daysnap/utils/blob/f141498/src/createSwipeHandlers.ts#L18)

@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[createSwipeHandlers.ts:29](https://github.com/daysnap/utils/blob/523ea73/src/createSwipeHandlers.ts#L29)
+[createSwipeHandlers.ts:29](https://github.com/daysnap/utils/blob/f141498/src/createSwipeHandlers.ts#L29)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[createSwipeHandlers.ts:28](https://github.com/daysnap/utils/blob/523ea73/src/createSwipeHandlers.ts#L28)
+[createSwipeHandlers.ts:28](https://github.com/daysnap/utils/blob/f141498/src/createSwipeHandlers.ts#L28)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[createSwipeHandlers.ts:27](https://github.com/daysnap/utils/blob/523ea73/src/createSwipeHandlers.ts#L27)
+[createSwipeHandlers.ts:27](https://github.com/daysnap/utils/blob/f141498/src/createSwipeHandlers.ts#L27)
 
 ___
 
@@ -99,4 +99,4 @@ ___
 
 #### Defined in
 
-[createSwipeHandlers.ts:26](https://github.com/daysnap/utils/blob/523ea73/src/createSwipeHandlers.ts#L26)
+[createSwipeHandlers.ts:26](https://github.com/daysnap/utils/blob/f141498/src/createSwipeHandlers.ts#L26)
